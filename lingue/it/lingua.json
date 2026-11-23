@@ -1,0 +1,24 @@
+{
+ "nome": "Italiano",
+ "codice": "it",
+ "frase_codice": "NUOVO CODICE: {colore}",
+ "colori": [
+  "VERDE",
+  "ROSSO",
+  "GIALLO",
+  "VIOLA",
+  "ARANCIONE",
+  "BLU"
+ ],
+ "sostituzioni": {
+  "à": "a'",
+  "è": "e'",
+  "é": "e'",
+  "ì": "i'",
+  "ò": "o'",
+  "ù": "u'",
+  "À": "A'",
+  "È": "E'",
+  "É": "E'"
+ }
+}

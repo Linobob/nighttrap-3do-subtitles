@@ -1,0 +1,2030 @@
+{
+ "disco": 1,
+ "clip": [
+  {
+   "clip": "clip0004",
+   "battute": [
+    {
+     "inizio": 2.22,
+     "fine": 7.02,
+     "testo": "Sono Simms, comandante della squadra S.C.A.T. Missione S.C.A.T. 230."
+    },
+    {
+     "inizio": 7.8,
+     "fine": 19.44,
+     "testo": "Cinque ragazze dirette a una festa nel weekend alla vecchia Lakeshore Winery, casa dei coniugi Victor Martin e dei loro due figli, Jeff e Sarah."
+    },
+    {
+     "inizio": 20.12,
+     "fine": 26.07,
+     "testo": "La tua missione: proteggere quelle cinque ragazze da ciò che è successo a un altro gruppo di ragazzi."
+    },
+    {
+     "inizio": 26.12,
+     "fine": 29.59,
+     "testo": "Sono spariti dopo aver passato una notte dai Martin."
+    },
+    {
+     "inizio": 29.8,
+     "fine": 34.91,
+     "testo": "Ieri notte uno dei nostri agenti è entrato in casa e ha trovato uno strano sistema di sicurezza."
+    },
+    {
+     "inizio": 34.96,
+     "fine": 42.76,
+     "testo": "Telecamere nascoste quasi in ogni stanza e una serie di trappole. Il nostro agente ha collegato un bypass al sistema,"
+    },
+    {
+     "inizio": 43.02,
+     "fine": 47.55,
+     "testo": "così puoi controllare telecamere e trappole con questa unità remota."
+    },
+    {
+     "inizio": 49.06,
+     "fine": 54.57,
+     "testo": "Le trappole sono protette da un codice d'accesso. Non funzionano se non inserisci il codice giusto."
+    },
+    {
+     "inizio": 54.62,
+     "fine": 58.49,
+     "testo": "In questo momento il codice è il blu e hai il controllo delle trappole."
+    },
+    {
+     "inizio": 58.54,
+     "fine": 62.97,
+     "testo": "Ma chiunque in quella casa può cambiare il codice in qualsiasi momento."
+    },
+    {
+     "inizio": 63.02,
+     "fine": 64.46,
+     "testo": "Quindi ascolta bene."
+    }
+   ]
+  },
+  {
+   "clip": "clip0005",
+   "battute": [
+    {
+     "inizio": 0.0,
+     "fine": 3.01,
+     "testo": "Il tuo cavo di bypass è qui, nel corridoio sul retro."
+    },
+    {
+     "inizio": 3.06,
+     "fine": 6.96,
+     "testo": "Se qualcuno lo stacca, perdi il controllo. Per sempre."
+    },
+    {
+     "inizio": 8.14,
+     "fine": 10.41,
+     "testo": "Questa è la mia squadra d'assalto."
+    },
+    {
+     "inizio": 10.48,
+     "fine": 13.57,
+     "testo": "E quella è Kelly, una delle mie migliori agenti sotto copertura."
+    },
+    {
+     "inizio": 13.62,
+     "fine": 16.02,
+     "testo": "Arriverà insieme alle altre ragazze."
+    },
+    {
+     "inizio": 16.54,
+     "fine": 20.67,
+     "testo": "Metto la sua vita e quella delle altre ragazze nelle tue mani."
+    },
+    {
+     "inizio": 21.16,
+     "fine": 23.62,
+     "testo": "Non pensare nemmeno di sbagliare."
+    },
+    {
+     "inizio": 24.4,
+     "fine": 30.73,
+     "testo": "Se non hai il cervello o il fegato per questo incarico, passa i comandi a qualcuno che ce l'ha."
+    },
+    {
+     "inizio": 31.2,
+     "fine": 34.01,
+     "testo": "Le ragazze dovrebbero arrivare nel vialetto."
+    },
+    {
+     "inizio": 34.06,
+     "fine": 35.44,
+     "testo": "Stai perdendo tempo."
+    },
+    {
+     "inizio": 36.14,
+     "fine": 37.82,
+     "testo": "Vai là, subito."
+    },
+    {
+     "inizio": 40.0,
+     "fine": 42.31,
+     "testo": "Sembra che tu non sia all'altezza di questa missione."
+    },
+    {
+     "inizio": 42.36,
+     "fine": 43.89,
+     "testo": "Chiudo il collegamento."
+    }
+   ]
+  },
+  {
+   "clip": "clip0024",
+   "battute": [
+    {
+     "inizio": 2.94,
+     "fine": 5.06,
+     "testo": "So come può essere, Tony."
+    },
+    {
+     "inizio": 5.4,
+     "fine": 7.53,
+     "testo": "Anch'io sono stato giovane, sai."
+    },
+    {
+     "inizio": 9.26,
+     "fine": 11.9,
+     "testo": "Sei un ragazzo molto speciale."
+    },
+    {
+     "inizio": 12.0,
+     "fine": 13.6,
+     "testo": "Lo sappiamo tutti e due."
+    },
+    {
+     "inizio": 13.68,
+     "fine": 16.79,
+     "testo": "Ma devi cominciare a fare il tuo lavoro."
+    },
+    {
+     "inizio": 16.84,
+     "fine": 19.15,
+     "testo": "Tutti dobbiamo fare il nostro lavoro."
+    },
+    {
+     "inizio": 19.2,
+     "fine": 19.95,
+     "testo": "Lo so."
+    },
+    {
+     "inizio": 20.0,
+     "fine": 21.81,
+     "testo": "Allora aiuta tuo cugino con quella roba."
+    },
+    {
+     "inizio": 21.86,
+     "fine": 23.21,
+     "testo": "Sì, era ora."
+    },
+    {
+     "inizio": 23.26,
+     "fine": 24.89,
+     "testo": "Scusa, non ci avevo pensato."
+    },
+    {
+     "inizio": 24.94,
+     "fine": 26.81,
+     "testo": "Sì, te lo faccio pensare io se non ti dai una mossa."
+    },
+    {
+     "inizio": 26.86,
+     "fine": 28.16,
+     "testo": "Scusa."
+    }
+   ]
+  },
+  {
+   "clip": "clip0029",
+   "battute": [
+    {
+     "inizio": 19.26,
+     "fine": 19.86,
+     "testo": "Ehi!"
+    },
+    {
+     "inizio": 19.74,
+     "fine": 22.23,
+     "testo": "Ragazze, avete visto qualcosa muoversi laggiù?"
+    },
+    {
+     "inizio": 22.28,
+     "fine": 24.17,
+     "testo": "No, Ashley, credo sia la tua immaginazione."
+    },
+    {
+     "inizio": 24.22,
+     "fine": 25.42,
+     "testo": "Guardate la barca!"
+    },
+    {
+     "inizio": 26.1,
+     "fine": 27.63,
+     "testo": "Che imbarazzo."
+    },
+    {
+     "inizio": 27.68,
+     "fine": 31.76,
+     "testo": "Sai, però non è proprio come me l'immaginavo."
+    },
+    {
+     "inizio": 32.24,
+     "fine": 34.45,
+     "testo": "Qualcuno ha visto la mia borsa di camoscio?"
+    },
+    {
+     "inizio": 34.5,
+     "fine": 36.89,
+     "testo": "Quale? Ne hai tipo un milione."
+    },
+    {
+     "inizio": 36.94,
+     "fine": 38.25,
+     "testo": "Sparisci, faccia strana."
+    },
+    {
+     "inizio": 38.3,
+     "fine": 40.05,
+     "testo": "Ringrazia che ti ho portato con me."
+    },
+    {
+     "inizio": 40.1,
+     "fine": 43.01,
+     "testo": "Mi hai portato solo perché te l'ha imposto la mamma."
+    },
+    {
+     "inizio": 43.06,
+     "fine": 43.69,
+     "testo": "Stai zitto!"
+    },
+    {
+     "inizio": 43.74,
+     "fine": 45.94,
+     "testo": "Beh, si vede che sarà divertente."
+    },
+    {
+     "inizio": 46.24,
+     "fine": 48.34,
+     "testo": "Ci sei, Controllo? Entriamo."
+    },
+    {
+     "inizio": 52.42,
+     "fine": 54.37,
+     "testo": "Ciao! – Ciao."
+    },
+    {
+     "inizio": 54.42,
+     "fine": 56.73,
+     "testo": "Avevo tanta paura che aveste deciso di non venire."
+    },
+    {
+     "inizio": 56.78,
+     "fine": 60.19,
+     "testo": "Ma figurati. Non vedevo l'ora da tutta la settimana."
+    },
+    {
+     "inizio": 60.24,
+     "fine": 62.43,
+     "testo": "Sarah, comunque è bellissimo qui."
+    },
+    {
+     "inizio": 62.48,
+     "fine": 64.41,
+     "testo": "Davvero? Sembra una palude."
+    },
+    {
+     "inizio": 64.46,
+     "fine": 65.66,
+     "testo": "Ciao, Megan."
+    },
+    {
+     "inizio": 66.34,
+     "fine": 69.31,
+     "testo": "Dai, venite tutte. Voglio presentarvi i miei genitori."
+    },
+    {
+     "inizio": 69.36,
+     "fine": 70.19,
+     "testo": "Va bene."
+    },
+    {
+     "inizio": 70.24,
+     "fine": 73.73,
+     "testo": "Così queste sono le tue nuove, adorabili amiche del centro commerciale."
+    },
+    {
+     "inizio": 73.78,
+     "fine": 76.25,
+     "testo": "Benvenute nel nostro piccolo rifugio."
+    }
+   ]
+  },
+  {
+   "clip": "clip0030",
+   "battute": [
+    {
+     "inizio": 0.0,
+     "fine": 2.85,
+     "testo": "Papà, ti presento Cindy."
+    },
+    {
+     "inizio": 2.9,
+     "fine": 4.1,
+     "testo": "Ciao."
+    },
+    {
+     "inizio": 4.44,
+     "fine": 6.54,
+     "testo": "Ashley. – Ciao."
+    },
+    {
+     "inizio": 7.1,
+     "fine": 9.18,
+     "testo": "Megan. – Ehi."
+    },
+    {
+     "inizio": 9.4,
+     "fine": 13.48,
+     "testo": "Lisa. – Ciao. – Il suo fratellino, Danny."
+    },
+    {
+     "inizio": 14.82,
+     "fine": 21.84,
+     "testo": "E Kelly. – Piacere, signor Martin. – Ti prego, chiamami Victor."
+    },
+    {
+     "inizio": 23.92,
+     "fine": 27.68,
+     "testo": "E questa è mia moglie, Sheila."
+    },
+    {
+     "inizio": 28.3,
+     "fine": 31.24,
+     "testo": "Ciao. Forza, tutte in casa."
+    },
+    {
+     "inizio": 36.02,
+     "fine": 43.64,
+     "testo": "Ehi, Sarah, chi è quello? – È Eddie lo Strambo. È solo uno dei vicini. Si sta proprio scatenando."
+    }
+   ]
+  },
+  {
+   "clip": "clip0031",
+   "battute": [
+    {
+     "inizio": 0.52,
+     "fine": 3.1,
+     "testo": "Allora, che succede stanotte, papà?"
+    },
+    {
+     "inizio": 3.54,
+     "fine": 8.75,
+     "testo": "Beh, dobbiamo imbottigliare i due di sotto, e Sarah stanotte ne porta altre sei."
+    },
+    {
+     "inizio": 8.8,
+     "fine": 10.6,
+     "testo": "Sei? – Già."
+    },
+    {
+     "inizio": 10.84,
+     "fine": 13.67,
+     "testo": "Il problema è che io e Sheila forse dobbiamo fare una consegna."
+    },
+    {
+     "inizio": 13.72,
+     "fine": 16.45,
+     "testo": "Nessun problema. Ce la caviamo io e Tony."
+    },
+    {
+     "inizio": 16.54,
+     "fine": 19.87,
+     "testo": "Non ne sono così sicuro. Anche Sheila deve andare."
+    },
+    {
+     "inizio": 20.48,
+     "fine": 21.79,
+     "testo": "Ehi, ehi, ehi! E questo cos'è?"
+    },
+    {
+     "inizio": 21.84,
+     "fine": 22.95,
+     "testo": "Questa è un'annata speciale."
+    },
+    {
+     "inizio": 23.0,
+     "fine": 25.41,
+     "testo": "Oh, Jeffrey, non essere così egoista."
+    },
+    {
+     "inizio": 25.46,
+     "fine": 27.78,
+     "testo": "Pensa ai poveri Auger affamati."
+    },
+    {
+     "inizio": 28.62,
+     "fine": 29.86,
+     "testo": "Quelle bestie."
+    },
+    {
+     "inizio": 30.1,
+     "fine": 31.3,
+     "testo": "Sono arrivate."
+    },
+    {
+     "inizio": 31.84,
+     "fine": 33.04,
+     "testo": "Bene."
+    },
+    {
+     "inizio": 39.28,
+     "fine": 40.87,
+     "testo": "Ma insomma, che ti prende?"
+    },
+    {
+     "inizio": 40.92,
+     "fine": 43.01,
+     "testo": "Non lo so. Mi annoio, credo."
+    },
+    {
+     "inizio": 43.06,
+     "fine": 45.44,
+     "testo": "Ti annoi. Beh, cambierà presto, eh?"
+    },
+    {
+     "inizio": 45.6,
+     "fine": 47.33,
+     "testo": "Voglio dire, stanotte siamo da soli."
+    },
+    {
+     "inizio": 47.38,
+     "fine": 48.49,
+     "testo": "E allora?"
+    },
+    {
+     "inizio": 48.54,
+     "fine": 53.01,
+     "testo": "E allora, l'hai sentito. Sono sei. Dev'essere una specie di record."
+    },
+    {
+     "inizio": 53.28,
+     "fine": 55.07,
+     "testo": "Sì, beh, non credo che tu capisca, Jeff."
+    },
+    {
+     "inizio": 55.12,
+     "fine": 57.13,
+     "testo": "Quella roba non mi interessa più."
+    },
+    {
+     "inizio": 57.18,
+     "fine": 59.08,
+     "testo": "Oh, cielo."
+    }
+   ]
+  },
+  {
+   "clip": "clip0034",
+   "battute": [
+    {
+     "inizio": 5.36,
+     "fine": 6.64,
+     "testo": "Sono arrivate."
+    },
+    {
+     "inizio": 14.9,
+     "fine": 17.09,
+     "testo": "Sembrano un gruppetto in salute."
+    },
+    {
+     "inizio": 17.14,
+     "fine": 18.95,
+     "testo": "Sì, dovrebbe essere un bel weekend."
+    },
+    {
+     "inizio": 19.0,
+     "fine": 21.71,
+     "testo": "Peccato che stanotte dobbiamo andare dagli Auger."
+    },
+    {
+     "inizio": 21.76,
+     "fine": 24.91,
+     "testo": "Preferirei di gran lunga restare qui a godermi le nostre nuove ospiti."
+    },
+    {
+     "inizio": 24.96,
+     "fine": 27.85,
+     "testo": "Su, Victor, non possiamo dimenticarci dei poveri Auger."
+    },
+    {
+     "inizio": 27.9,
+     "fine": 31.15,
+     "testo": "Tu e le tue opere di carità state diventando davvero troppo."
+    },
+    {
+     "inizio": 31.2,
+     "fine": 33.6,
+     "testo": "Vieni, andiamo a trovare le ragazze."
+    }
+   ]
+  },
+  {
+   "clip": "clip0036",
+   "battute": [
+    {
+     "inizio": 1.7,
+     "fine": 4.31,
+     "testo": "Apri la porta. Apri la porta!"
+    },
+    {
+     "inizio": 4.36,
+     "fine": 5.31,
+     "testo": "Un attimo!"
+    },
+    {
+     "inizio": 5.36,
+     "fine": 8.89,
+     "testo": "Quanto può essere difficile aprire una stupida porta?"
+    },
+    {
+     "inizio": 9.78,
+     "fine": 12.57,
+     "testo": "Chiudi la porta. Riesci a chiudere la porta?"
+    },
+    {
+     "inizio": 12.62,
+     "fine": 15.69,
+     "testo": "Quanto può essere difficile chiudere la porta?"
+    },
+    {
+     "inizio": 17.72,
+     "fine": 18.92,
+     "testo": "Ahi!"
+    }
+   ]
+  },
+  {
+   "clip": "clip0045",
+   "battute": [
+    {
+     "inizio": 0.0,
+     "fine": 1.65,
+     "testo": "Entrate pure."
+    },
+    {
+     "inizio": 1.7,
+     "fine": 3.56,
+     "testo": "Che posto fantastico!"
+    },
+    {
+     "inizio": 3.7,
+     "fine": 8.5,
+     "testo": "Lasciate pure le borse lì per ora, e portate la spesa di qua, in cucina."
+    },
+    {
+     "inizio": 16.82,
+     "fine": 18.34,
+     "testo": "Enchanté! – Cosa?"
+    },
+    {
+     "inizio": 19.14,
+     "fine": 21.81,
+     "testo": "(in francese) – Oh, no, grazie. – Petit."
+    },
+    {
+     "inizio": 25.1,
+     "fine": 27.63,
+     "testo": "Questo tizio è proprio fuori di testa."
+    },
+    {
+     "inizio": 28.2,
+     "fine": 31.0,
+     "testo": "Ehi, Controllo, dai un'occhiata alla casa."
+    }
+   ]
+  },
+  {
+   "clip": "clip0048",
+   "battute": [
+    {
+     "inizio": 0.62,
+     "fine": 2.97,
+     "testo": "Appoggiatele dove volete, ragazze."
+    },
+    {
+     "inizio": 3.02,
+     "fine": 5.45,
+     "testo": "È una casa bellissima, signora Martin."
+    },
+    {
+     "inizio": 5.5,
+     "fine": 7.63,
+     "testo": "Oh, vi prego, chiamatemi Sheila."
+    },
+    {
+     "inizio": 9.54,
+     "fine": 11.14,
+     "testo": "Questo è il congelatore?"
+    },
+    {
+     "inizio": 11.58,
+     "fine": 14.01,
+     "testo": "Oh, no, no, no. Non quello. L'altro."
+    },
+    {
+     "inizio": 14.06,
+     "fine": 16.72,
+     "testo": "E questo? – Un altro frigorifero."
+    },
+    {
+     "inizio": 17.62,
+     "fine": 19.29,
+     "testo": "Perché è chiuso a chiave?"
+    },
+    {
+     "inizio": 20.56,
+     "fine": 23.93,
+     "testo": "Vogliamo tutte ringraziarvi tanto per averci invitate questo weekend."
+    },
+    {
+     "inizio": 23.98,
+     "fine": 25.11,
+     "testo": "Siete molto gentili."
+    },
+    {
+     "inizio": 25.16,
+     "fine": 26.86,
+     "testo": "È un piacere, cara."
+    },
+    {
+     "inizio": 26.94,
+     "fine": 30.29,
+     "testo": "E questi? – Oh, ghiaccioli alla ciliegia fatti in casa."
+    },
+    {
+     "inizio": 30.34,
+     "fine": 30.94,
+     "testo": "Fantastico."
+    },
+    {
+     "inizio": 30.86,
+     "fine": 35.64,
+     "testo": "Qui ognuno ha le sue voglie molto particolari."
+    },
+    {
+     "inizio": 36.4,
+     "fine": 38.27,
+     "testo": "Ehi, forza, tutte. Andiamo giù al lago."
+    },
+    {
+     "inizio": 38.32,
+     "fine": 41.08,
+     "testo": "Sì, io e Victor pensiamo a tutto."
+    },
+    {
+     "inizio": 41.56,
+     "fine": 44.06,
+     "testo": "Oh, Sarah."
+    },
+    {
+     "inizio": 48.56,
+     "fine": 51.61,
+     "testo": "Io e Victor stanotte dobbiamo andare dagli Auger."
+    },
+    {
+     "inizio": 51.66,
+     "fine": 53.39,
+     "testo": "Una consegna, a dire il vero."
+    },
+    {
+     "inizio": 53.44,
+     "fine": 55.95,
+     "testo": "Sono sicura che tu e i ragazzi potete occuparvi di tutto qui."
+    },
+    {
+     "inizio": 56.0,
+     "fine": 57.86,
+     "testo": "Capisco."
+    },
+    {
+     "inizio": 58.56,
+     "fine": 59.9,
+     "testo": "Buonanotte, papà."
+    },
+    {
+     "inizio": 60.92,
+     "fine": 63.45,
+     "testo": "Buonanotte, tesoro. Buonanotte, Sarah."
+    },
+    {
+     "inizio": 63.72,
+     "fine": 64.67,
+     "testo": "Buonanotte. Ciao."
+    },
+    {
+     "inizio": 64.72,
+     "fine": 66.96,
+     "testo": "Ciao, ragazze. Divertitevi."
+    },
+    {
+     "inizio": 68.54,
+     "fine": 70.5,
+     "testo": "Un gruppetto curioso."
+    },
+    {
+     "inizio": 70.84,
+     "fine": 72.08,
+     "testo": "Cosa c'è?"
+    },
+    {
+     "inizio": 72.54,
+     "fine": 74.66,
+     "testo": "Beh, c'è qualcosa in Kelly."
+    },
+    {
+     "inizio": 75.14,
+     "fine": 78.36,
+     "testo": "Mmm, di nuovo l'intuito femminile, eh?"
+    },
+    {
+     "inizio": 79.0,
+     "fine": 80.85,
+     "testo": "Oh, Victor, sei un mostro."
+    },
+    {
+     "inizio": 80.9,
+     "fine": 84.58,
+     "testo": "Facciamo cambiare il codice ai ragazzi, per sicurezza."
+    }
+   ]
+  },
+  {
+   "clip": "clip0057",
+   "battute": [
+    {
+     "inizio": 23.46,
+     "fine": 26.53,
+     "testo": "È solo la cantina. Andiamo a vedere le barche."
+    }
+   ]
+  },
+  {
+   "clip": "clip0065",
+   "battute": [
+    {
+     "inizio": 5.02,
+     "fine": 7.43,
+     "testo": "Ciao, Eddie. – Ciao, Eddie."
+    },
+    {
+     "inizio": 7.48,
+     "fine": 9.35,
+     "testo": "Che gentile a passare, Eddie."
+    },
+    {
+     "inizio": 9.4,
+     "fine": 12.4,
+     "testo": "Ah, e facci sapere quando vuoi morire, Eddie."
+    },
+    {
+     "inizio": 45.84,
+     "fine": 48.25,
+     "testo": "Credi davvero che dovremmo lasciarli qui da soli?"
+    },
+    {
+     "inizio": 48.3,
+     "fine": 49.23,
+     "testo": "Perché no?"
+    },
+    {
+     "inizio": 49.28,
+     "fine": 50.77,
+     "testo": "Beh, credi che ce la facciano?"
+    },
+    {
+     "inizio": 50.82,
+     "fine": 51.93,
+     "testo": "Certo che ce la fanno."
+    },
+    {
+     "inizio": 51.98,
+     "fine": 54.11,
+     "testo": "Cosa mai potrebbe andare storto?"
+    },
+    {
+     "inizio": 54.36,
+     "fine": 56.89,
+     "testo": "Andiamo, cara. Gli Auger ci aspettano."
+    }
+   ]
+  },
+  {
+   "clip": "clip0067",
+   "battute": [
+    {
+     "inizio": 2.32,
+     "fine": 4.79,
+     "testo": "Stanotte siete da soli, ragazzi! – Va bene."
+    },
+    {
+     "inizio": 4.84,
+     "fine": 10.77,
+     "testo": "Ora, Jeffrey, scendi di sotto e cambia il codice d'accesso delle trappole: non deve più essere il blu."
+    },
+    {
+     "inizio": 10.82,
+     "fine": 13.31,
+     "testo": "Tranquilla, mamma. È tutta questione di dita."
+    },
+    {
+     "inizio": 13.36,
+     "fine": 14.56,
+     "testo": "Buona caccia."
+    },
+    {
+     "inizio": 18.36,
+     "fine": 21.34,
+     "testo": "D'accordo. Andiamo a preparare tutto."
+    },
+    {
+     "inizio": 21.68,
+     "fine": 24.54,
+     "testo": "Ti diverti proprio con questa roba, eh?"
+    }
+   ]
+  },
+  {
+   "clip": "clip0070",
+   "battute": [
+    {
+     "inizio": 27.66,
+     "fine": 29.99,
+     "testo": "Sarah, i tuoi genitori se ne vanno."
+    },
+    {
+     "inizio": 30.94,
+     "fine": 39.35,
+     "testo": "Allora, Sarah, siamo in questa casa enorme con tutte le tue amiche. Abbiamo i telefoni, abbiamo una macchina, i tuoi sono via..."
+    },
+    {
+     "inizio": 39.4,
+     "fine": 41.99,
+     "testo": "Dai, Sarah, qual è la prima cosa che ti viene in mente?"
+    },
+    {
+     "inizio": 42.04,
+     "fine": 43.24,
+     "testo": "Festa!"
+    },
+    {
+     "inizio": 56.66,
+     "fine": 59.14,
+     "testo": "Vai, Megan!"
+    },
+    {
+     "inizio": 62.28,
+     "fine": 64.68,
+     "testo": "Ma guarda Megan!"
+    },
+    {
+     "inizio": 149.68,
+     "fine": 151.0,
+     "testo": "Chi è quello?"
+    },
+    {
+     "inizio": 153.44,
+     "fine": 156.12,
+     "testo": "È mio cugino, Tony."
+    },
+    {
+     "inizio": 160.04,
+     "fine": 160.99,
+     "testo": "Cos'è questo? Abbiamo dei problemi."
+    },
+    {
+     "inizio": 161.04,
+     "fine": 163.6,
+     "testo": "E il mio gentilissimo fratello, Jeff."
+    },
+    {
+     "inizio": 165.18,
+     "fine": 168.93,
+     "testo": "Credo che qualcuno stia prendendo il controllo del sistema."
+    },
+    {
+     "inizio": 168.98,
+     "fine": 170.41,
+     "testo": "Vedi se riesci a sistemarlo."
+    },
+    {
+     "inizio": 170.46,
+     "fine": 173.21,
+     "testo": "Altrimenti dovremo farlo alla vecchia maniera."
+    },
+    {
+     "inizio": 173.26,
+     "fine": 175.81,
+     "testo": "Potrebbe volerci tutto il weekend. Ho dei programmi."
+    },
+    {
+     "inizio": 175.86,
+     "fine": 176.87,
+     "testo": "Già."
+    },
+    {
+     "inizio": 176.92,
+     "fine": 178.73,
+     "testo": "Venite, tutte. Vi faccio vedere le camere."
+    },
+    {
+     "inizio": 178.78,
+     "fine": 179.73,
+     "testo": "Ok, perfetto."
+    },
+    {
+     "inizio": 179.78,
+     "fine": 182.24,
+     "testo": "Lisa! Dai, Lisa. Lisa!"
+    },
+    {
+     "inizio": 185.22,
+     "fine": 186.54,
+     "testo": "Che succede?"
+    },
+    {
+     "inizio": 186.92,
+     "fine": 188.85,
+     "testo": "Quella ragazza è identica a Madeline."
+    },
+    {
+     "inizio": 188.9,
+     "fine": 194.1,
+     "testo": "Oh, non di nuovo. – No, non di nuovo."
+    },
+    {
+     "inizio": 194.56,
+     "fine": 198.83,
+     "testo": "Dai, bellimbusto. Meglio cambiare quel codice. Che ne dici di..."
+    }
+   ]
+  },
+  {
+   "clip": "clip0078",
+   "battute": [
+    {
+     "inizio": 21.22,
+     "fine": 25.07,
+     "testo": "Ci sono un sacco di tizi strani da queste parti. Vado a dare un'occhiata più da vicino."
+    },
+    {
+     "inizio": 25.12,
+     "fine": 26.92,
+     "testo": "Aspettate finché non torno."
+    }
+   ]
+  },
+  {
+   "clip": "clip0091",
+   "battute": [
+    {
+     "inizio": 0.0,
+     "fine": 2.36,
+     "testo": "Qui Capo. Rispondi, Collins."
+    },
+    {
+     "inizio": 2.74,
+     "fine": 4.34,
+     "testo": "Nessun movimento, passo."
+    },
+    {
+     "inizio": 4.82,
+     "fine": 7.15,
+     "testo": "Swanson? – Sembra tutto tranquillo."
+    },
+    {
+     "inizio": 7.38,
+     "fine": 9.58,
+     "testo": "Jason. Rispondi, Jason."
+    },
+    {
+     "inizio": 9.86,
+     "fine": 11.63,
+     "testo": "Qui Mike. Jason è dentro."
+    },
+    {
+     "inizio": 11.68,
+     "fine": 14.35,
+     "testo": "Avevo detto che nessuno entrava finché non arrivava il segnale di Kelly."
+    },
+    {
+     "inizio": 14.4,
+     "fine": 16.27,
+     "testo": "Pensava di essere stato visto, così è entrato a fare pulizia."
+    },
+    {
+     "inizio": 16.32,
+     "fine": 18.91,
+     "testo": "Ha chiuso prima che potessi rispondere. Sembrava una cosa di routine."
+    },
+    {
+     "inizio": 18.96,
+     "fine": 21.51,
+     "testo": "Collins, usa l'opzione esca e controlla."
+    },
+    {
+     "inizio": 21.56,
+     "fine": 22.49,
+     "testo": "Ricevuto."
+    },
+    {
+     "inizio": 22.54,
+     "fine": 24.93,
+     "testo": "Mike, gira sul retro e copri la posizione tre."
+    },
+    {
+     "inizio": 24.98,
+     "fine": 26.67,
+     "testo": "Lo voglio fuori da quella casa."
+    },
+    {
+     "inizio": 26.72,
+     "fine": 27.92,
+     "testo": "Ricevuto."
+    },
+    {
+     "inizio": 30.0,
+     "fine": 32.04,
+     "testo": "Ricevuto."
+    }
+   ]
+  },
+  {
+   "clip": "clip0101",
+   "battute": [
+    {
+     "inizio": 29.98,
+     "fine": 35.48,
+     "testo": "Le camere degli ospiti sono quassù, e hanno tutte in comune questo bagno."
+    },
+    {
+     "inizio": 36.04,
+     "fine": 38.2,
+     "testo": "Ehi, è stupendo."
+    },
+    {
+     "inizio": 39.02,
+     "fine": 40.22,
+     "testo": "Fantastico."
+    },
+    {
+     "inizio": 40.66,
+     "fine": 45.72,
+     "testo": "Oh, ecco, questa è la mia camera preferita."
+    },
+    {
+     "inizio": 45.96,
+     "fine": 47.16,
+     "testo": "Fantastico."
+    }
+   ]
+  },
+  {
+   "clip": "clip0102",
+   "battute": [
+    {
+     "inizio": 4.9,
+     "fine": 9.4,
+     "testo": "Sarah, tuo cugino è adorabile."
+    },
+    {
+     "inizio": 10.2,
+     "fine": 11.11,
+     "testo": "Quanti anni ha?"
+    },
+    {
+     "inizio": 11.16,
+     "fine": 13.45,
+     "testo": "Oh, più di quanti potresti pensare."
+    },
+    {
+     "inizio": 13.5,
+     "fine": 14.89,
+     "testo": "Sai, non parla molto."
+    },
+    {
+     "inizio": 14.94,
+     "fine": 16.93,
+     "testo": "Non ne ha mai avuto l'occasione."
+    },
+    {
+     "inizio": 16.98,
+     "fine": 19.0,
+     "testo": "Credo di piacergli."
+    },
+    {
+     "inizio": 19.08,
+     "fine": 20.66,
+     "testo": "È solo un po' timido."
+    }
+   ]
+  },
+  {
+   "clip": "clip0103",
+   "battute": [
+    {
+     "inizio": 1.3,
+     "fine": 5.33,
+     "testo": "Senti, il tuo compito era proteggere Kelly e le altre ragazze."
+    },
+    {
+     "inizio": 5.38,
+     "fine": 8.19,
+     "testo": "Ma da quello che ho appena visto, la casa è invasa."
+    },
+    {
+     "inizio": 8.24,
+     "fine": 10.37,
+     "testo": "Ti sei fatto sfuggire troppi di quei succhiasangue."
+    },
+    {
+     "inizio": 10.42,
+     "fine": 14.93,
+     "testo": "Finché non capisci come fare il tuo lavoro, e farlo bene, sei congedato."
+    },
+    {
+     "inizio": 14.98,
+     "fine": 16.51,
+     "testo": "Chiudo il collegamento."
+    }
+   ]
+  },
+  {
+   "clip": "clip0108",
+   "battute": [
+    {
+     "inizio": 16.24,
+     "fine": 18.12,
+     "testo": "Qui Collins."
+    },
+    {
+     "inizio": 19.04,
+     "fine": 20.23,
+     "testo": "Si va, capo."
+    },
+    {
+     "inizio": 20.28,
+     "fine": 21.53,
+     "testo": "Niente eroismi, eh?"
+    },
+    {
+     "inizio": 21.58,
+     "fine": 22.19,
+     "testo": "Contaci."
+    },
+    {
+     "inizio": 22.24,
+     "fine": 24.95,
+     "testo": "Credo che dovremmo fargli il vecchio numero giamaicano, no?"
+    },
+    {
+     "inizio": 25.0,
+     "fine": 26.4,
+     "testo": "Passo e chiudo."
+    }
+   ]
+  },
+  {
+   "clip": "clip0109",
+   "battute": [
+    {
+     "inizio": 2.14,
+     "fine": 4.75,
+     "testo": "Sarah, è proprio carino."
+    },
+    {
+     "inizio": 4.8,
+     "fine": 6.73,
+     "testo": "Sono contenta che ti piaccia."
+    },
+    {
+     "inizio": 7.88,
+     "fine": 10.77,
+     "testo": "E che vista! – Davvero."
+    },
+    {
+     "inizio": 10.82,
+     "fine": 11.89,
+     "testo": "Ehi, posso usare quest'armadio?"
+    },
+    {
+     "inizio": 11.94,
+     "fine": 13.11,
+     "testo": "Ma certo, fai pure."
+    },
+    {
+     "inizio": 13.16,
+     "fine": 14.63,
+     "testo": "Ehi, Sarah, dov'è la tua camera?"
+    },
+    {
+     "inizio": 14.68,
+     "fine": 16.42,
+     "testo": "Oh, è di sotto."
+    },
+    {
+     "inizio": 17.48,
+     "fine": 19.05,
+     "testo": "Sì, questo posto sembra enorme."
+    },
+    {
+     "inizio": 19.1,
+     "fine": 20.31,
+     "testo": "Hai una famiglia numerosa?"
+    },
+    {
+     "inizio": 20.36,
+     "fine": 22.77,
+     "testo": "No, ci sono solo i miei genitori, mio fratello e io."
+    },
+    {
+     "inizio": 22.82,
+     "fine": 25.02,
+     "testo": "Ma non si sa mai chi può passare."
+    },
+    {
+     "inizio": 26.42,
+     "fine": 28.78,
+     "testo": "Wow, ragazze, questa sì che è vita."
+    },
+    {
+     "inizio": 29.16,
+     "fine": 30.66,
+     "testo": "E Tony?"
+    },
+    {
+     "inizio": 30.98,
+     "fine": 32.97,
+     "testo": "Oh, Tony è qui solo per l'estate."
+    },
+    {
+     "inizio": 33.02,
+     "fine": 35.29,
+     "testo": "Sai, credo che gli piaccia Ashley."
+    },
+    {
+     "inizio": 35.4,
+     "fine": 36.97,
+     "testo": "Davvero? – Sì."
+    },
+    {
+     "inizio": 37.02,
+     "fine": 38.61,
+     "testo": "Glielo si legge negli occhi."
+    },
+    {
+     "inizio": 38.66,
+     "fine": 40.09,
+     "testo": "Ma porta gli occhiali da sole."
+    },
+    {
+     "inizio": 40.14,
+     "fine": 44.14,
+     "testo": "Voglio dire, si capisce dalla faccia. E da come si comporta."
+    },
+    {
+     "inizio": 45.02,
+     "fine": 48.06,
+     "testo": "Sarah, cos'è questo?"
+    },
+    {
+     "inizio": 49.56,
+     "fine": 52.12,
+     "testo": "Oh, mio padre colleziona cose strane."
+    },
+    {
+     "inizio": 54.46,
+     "fine": 55.06,
+     "testo": "Vado io."
+    },
+    {
+     "inizio": 54.94,
+     "fine": 56.41,
+     "testo": "Wow, andiamo a vedere."
+    },
+    {
+     "inizio": 56.58,
+     "fine": 58.38,
+     "testo": "Megan ha invitato qualcuno?"
+    }
+   ]
+  },
+  {
+   "clip": "clip0111",
+   "battute": [
+    {
+     "inizio": 9.2,
+     "fine": 12.21,
+     "testo": "Non vorrai rovinarti la faccia con questa porcheria, vero?"
+    },
+    {
+     "inizio": 12.26,
+     "fine": 14.29,
+     "testo": "Megan, poteva andare molto peggio."
+    },
+    {
+     "inizio": 14.34,
+     "fine": 16.07,
+     "testo": "Dai, guarda questa roba."
+    },
+    {
+     "inizio": 16.12,
+     "fine": 20.11,
+     "testo": "Sai, dovrebbero provare questa roba sui topi prima di farla usare a gente come te."
+    },
+    {
+     "inizio": 20.16,
+     "fine": 21.71,
+     "testo": "Certo, e come dovrebbero fare, Megan?"
+    },
+    {
+     "inizio": 21.76,
+     "fine": 23.46,
+     "testo": "Con un topolino."
+    },
+    {
+     "inizio": 23.54,
+     "fine": 26.07,
+     "testo": "Vedi, prima lo metti su una sedia con un c... Ahia!"
+    },
+    {
+     "inizio": 26.12,
+     "fine": 29.05,
+     "testo": "\"Oh, no, signorina Lisa. È troppo stretto.\""
+    },
+    {
+     "inizio": 29.1,
+     "fine": 32.41,
+     "testo": "E poi prendi un po' di cipria e gliela spalmi su tutta la faccia."
+    },
+    {
+     "inizio": 32.46,
+     "fine": 36.42,
+     "testo": "\"Oh, no, signorina Lisa. Non respiro.\""
+    },
+    {
+     "inizio": 37.62,
+     "fine": 38.98,
+     "testo": "Vado io."
+    }
+   ]
+  },
+  {
+   "clip": "clip0113",
+   "battute": [
+    {
+     "inizio": 8.58,
+     "fine": 9.18,
+     "testo": "Salve, salve, salve."
+    },
+    {
+     "inizio": 9.14,
+     "fine": 10.77,
+     "testo": "Scusate tanto se vi disturbo così."
+    },
+    {
+     "inizio": 10.82,
+     "fine": 12.05,
+     "testo": "Scusate tanto l'intrusione."
+    },
+    {
+     "inizio": 12.1,
+     "fine": 15.57,
+     "testo": "Ma mi chiedevo se per caso avete visto la mia barca."
+    },
+    {
+     "inizio": 17.1,
+     "fine": 20.97,
+     "testo": "La vostra barca? – La mia barca! Oh, la mia barca."
+    },
+    {
+     "inizio": 21.02,
+     "fine": 23.33,
+     "testo": "Non è una bellezza?"
+    },
+    {
+     "inizio": 27.54,
+     "fine": 30.21,
+     "testo": "Guarda quante belle ragazze."
+    },
+    {
+     "inizio": 30.26,
+     "fine": 32.36,
+     "testo": "Va tutto bene qui?"
+    },
+    {
+     "inizio": 33.4,
+     "fine": 34.71,
+     "testo": "Bene. – Sì."
+    },
+    {
+     "inizio": 34.76,
+     "fine": 37.76,
+     "testo": "E tu, figliolo? L'hai vista la mia barca? Eh?"
+    },
+    {
+     "inizio": 41.76,
+     "fine": 44.53,
+     "testo": "Ah, porti quegli occhiali scuri di notte, eh? – Già."
+    },
+    {
+     "inizio": 44.58,
+     "fine": 46.78,
+     "testo": "Beh, serve altro, signore?"
+    },
+    {
+     "inizio": 47.9,
+     "fine": 48.5,
+     "testo": "No, no, no, no."
+    },
+    {
+     "inizio": 48.42,
+     "fine": 51.0,
+     "testo": "Va tutto bene. Sì. Qui va tutto bene."
+    },
+    {
+     "inizio": 51.86,
+     "fine": 53.47,
+     "testo": "Sì. Va bene."
+    },
+    {
+     "inizio": 53.52,
+     "fine": 54.79,
+     "testo": "Buonanotte. Grazie."
+    },
+    {
+     "inizio": 57.68,
+     "fine": 58.91,
+     "testo": "Che cos'era quella scena?"
+    },
+    {
+     "inizio": 58.96,
+     "fine": 60.43,
+     "testo": "Qualcosa su una barca."
+    },
+    {
+     "inizio": 61.38,
+     "fine": 63.25,
+     "testo": "Andiamo a mangiare qualcosa."
+    }
+   ]
+  },
+  {
+   "clip": "clip0114",
+   "battute": [
+    {
+     "inizio": 0.58,
+     "fine": 2.04,
+     "testo": "Dai! Dai!"
+    },
+    {
+     "inizio": 2.2,
+     "fine": 4.11,
+     "testo": "Credo che ci siano alcune amiche di Sarah."
+    },
+    {
+     "inizio": 4.16,
+     "fine": 5.95,
+     "testo": "Ragazze, che succede?"
+    },
+    {
+     "inizio": 6.0,
+     "fine": 7.65,
+     "testo": "La porta! Dai!"
+    },
+    {
+     "inizio": 7.7,
+     "fine": 9.72,
+     "testo": "Ok, scendo tra poco."
+    }
+   ]
+  },
+  {
+   "clip": "clip0115",
+   "battute": [
+    {
+     "inizio": 51.5,
+     "fine": 54.97,
+     "testo": "Prova, prova a rilassarti, cerca di stare calma, ok?"
+    },
+    {
+     "inizio": 55.6,
+     "fine": 59.34,
+     "testo": "Sta succedendo qualcosa qui. – Lo so. Lo sento."
+    },
+    {
+     "inizio": 60.12,
+     "fine": 61.51,
+     "testo": "Vado a controllare."
+    },
+    {
+     "inizio": 61.56,
+     "fine": 64.32,
+     "testo": "Sì, controlla. Fallo."
+    },
+    {
+     "inizio": 65.2,
+     "fine": 68.6,
+     "testo": "Allora, cosa vi va?"
+    },
+    {
+     "inizio": 69.18,
+     "fine": 71.97,
+     "testo": "Oh, che ne dite di un gelato? – Sì, buona idea."
+    },
+    {
+     "inizio": 72.02,
+     "fine": 74.49,
+     "testo": "Coppe gelato. – Non abbiamo comprato lo sciroppo."
+    },
+    {
+     "inizio": 74.54,
+     "fine": 77.27,
+     "testo": "Ah, lo so. Biscotti sbriciolati e gelato."
+    },
+    {
+     "inizio": 77.8,
+     "fine": 80.4,
+     "testo": "Sì, prendi tu i biscotti. – Eccoli qui."
+    },
+    {
+     "inizio": 83.16,
+     "fine": 85.96,
+     "testo": "Puoi metterci sopra questo. – Beh, grazie."
+    },
+    {
+     "inizio": 87.48,
+     "fine": 88.7,
+     "testo": "Che schifo."
+    },
+    {
+     "inizio": 101.1,
+     "fine": 102.97,
+     "testo": "Hai lasciato aperta la cassa dei corpi?"
+    },
+    {
+     "inizio": 103.02,
+     "fine": 104.82,
+     "testo": "No. – Beh, è aperta."
+    },
+    {
+     "inizio": 105.26,
+     "fine": 109.26,
+     "testo": "Abbiamo un altro problema. Ho trovato un tricorder di sopra."
+    },
+    {
+     "inizio": 109.58,
+     "fine": 111.98,
+     "testo": "Un cosa? – Un tricorder degli Auger."
+    },
+    {
+     "inizio": 112.34,
+     "fine": 115.12,
+     "testo": "Ehi, ne volete un po'? – Oh, grazie."
+    },
+    {
+     "inizio": 124.82,
+     "fine": 126.37,
+     "testo": "Allora, che ne dite, ragazze?"
+    },
+    {
+     "inizio": 126.42,
+     "fine": 128.33,
+     "testo": "È buonissimo. – È una mia creazione."
+    },
+    {
+     "inizio": 128.38,
+     "fine": 129.58,
+     "testo": "Fa schifo."
+    },
+    {
+     "inizio": 129.94,
+     "fine": 131.14,
+     "testo": "Ehi, dov'è Kelly?"
+    },
+    {
+     "inizio": 132.06,
+     "fine": 135.21,
+     "testo": "Non lo so, ma può prendersi il mio gelato. Andiamo a cercarla."
+    },
+    {
+     "inizio": 135.26,
+     "fine": 136.29,
+     "testo": "Che schifo."
+    },
+    {
+     "inizio": 136.34,
+     "fine": 137.54,
+     "testo": "Guarda lì."
+    },
+    {
+     "inizio": 138.86,
+     "fine": 140.59,
+     "testo": "Oh, hai ragione. Sono qui."
+    },
+    {
+     "inizio": 140.92,
+     "fine": 142.88,
+     "testo": "Chi è quello? – Non lo so."
+    },
+    {
+     "inizio": 143.98,
+     "fine": 146.57,
+     "testo": "È proprio il genere di cosa che capita nella nostra grande notte."
+    },
+    {
+     "inizio": 146.62,
+     "fine": 151.02,
+     "testo": "Beh, meglio prendere gli Auger prima che loro prendano le ragazze."
+    }
+   ]
+  },
+  {
+   "clip": "clip0121",
+   "battute": [
+    {
+     "inizio": 18.42,
+     "fine": 24.25,
+     "testo": "Qui Collins, passo. – Che succede? – Dentro sembra tutto a posto, ma di Jason nessuna traccia, passo."
+    },
+    {
+     "inizio": 24.3,
+     "fine": 28.3,
+     "testo": "Ok, torna in posizione, e in fretta. Potremmo dover entrare."
+    }
+   ]
+  },
+  {
+   "clip": "clip0124",
+   "battute": [
+    {
+     "inizio": 35.52,
+     "fine": 38.89,
+     "testo": "Megan, non funzionerà."
+    },
+    {
+     "inizio": 38.94,
+     "fine": 40.8,
+     "testo": "Non mi fai paura."
+    },
+    {
+     "inizio": 41.14,
+     "fine": 43.88,
+     "testo": "Aspetta. Che fai?"
+    },
+    {
+     "inizio": 44.86,
+     "fine": 46.06,
+     "testo": "No!"
+    },
+    {
+     "inizio": 49.08,
+     "fine": 51.69,
+     "testo": "Che stai facendo?"
+    }
+   ]
+  },
+  {
+   "clip": "clip0132",
+   "battute": [
+    {
+     "inizio": 6.62,
+     "fine": 8.62,
+     "testo": "Ehi, Controllo, guarda qui."
+    },
+    {
+     "inizio": 8.82,
+     "fine": 15.46,
+     "testo": "Hanno le foto di tutte le ragazze, con altezza, peso e gruppo sanguigno sul retro."
+    },
+    {
+     "inizio": 17.62,
+     "fine": 21.62,
+     "testo": "E guarda questo. È un medaglione con la foto di una ragazza."
+    },
+    {
+     "inizio": 22.24,
+     "fine": 23.92,
+     "testo": "È identica ad Ashley."
+    },
+    {
+     "inizio": 26.06,
+     "fine": 26.75,
+     "testo": "Oh, Tony."
+    },
+    {
+     "inizio": 26.8,
+     "fine": 30.73,
+     "testo": "Parli sempre da sola quando frughi tra la roba degli altri?"
+    },
+    {
+     "inizio": 31.42,
+     "fine": 32.61,
+     "testo": "Tony, che succede qui?"
+    },
+    {
+     "inizio": 32.66,
+     "fine": 35.35,
+     "testo": "Avete tutte queste foto delle ragazze, e quel medaglione."
+    },
+    {
+     "inizio": 35.4,
+     "fine": 38.65,
+     "testo": "Non capiresti mai. Stanne fuori. Ti avverto."
+    },
+    {
+     "inizio": 38.7,
+     "fine": 40.53,
+     "testo": "Tony, non ho paura di te."
+    },
+    {
+     "inizio": 40.58,
+     "fine": 42.65,
+     "testo": "Vorrei sapere cosa succede qui."
+    },
+    {
+     "inizio": 48.76,
+     "fine": 50.94,
+     "testo": "Qui la cosa si fa seria."
+    },
+    {
+     "inizio": 51.06,
+     "fine": 53.82,
+     "testo": "Kelly, tutto bene? – Sì."
+    },
+    {
+     "inizio": 54.02,
+     "fine": 55.22,
+     "testo": "Andiamo fuori."
+    },
+    {
+     "inizio": 59.8,
+     "fine": 62.69,
+     "testo": "Dai, dobbiamo andarcene. Ci danno la caccia."
+    },
+    {
+     "inizio": 62.74,
+     "fine": 64.35,
+     "testo": "Sì, bel tentativo, ragazzino."
+    },
+    {
+     "inizio": 64.4,
+     "fine": 66.07,
+     "testo": "Dico sul serio. Venite, ve lo faccio vedere."
+    },
+    {
+     "inizio": 66.12,
+     "fine": 69.39,
+     "testo": "Aspetta un attimo, Danny. Calmati e dicci esattamente cosa hai visto."
+    },
+    {
+     "inizio": 69.44,
+     "fine": 73.95,
+     "testo": "Sono sceso in cantina e ho visto delle sale di controllo con monitor e pulsanti per le trappole."
+    },
+    {
+     "inizio": 74.0,
+     "fine": 75.9,
+     "testo": "No! No!"
+    },
+    {
+     "inizio": 76.8,
+     "fine": 78.0,
+     "testo": "Dico sul serio."
+    }
+   ]
+  },
+  {
+   "clip": "clip0136",
+   "battute": [
+    {
+     "inizio": 1.2,
+     "fine": 3.39,
+     "testo": "Non ci credo a quello che ho appena visto."
+    },
+    {
+     "inizio": 3.44,
+     "fine": 6.83,
+     "testo": "Quei succhiasangue hanno preso Lisa, e tu avevi la possibilità di salvarla."
+    },
+    {
+     "inizio": 6.88,
+     "fine": 10.79,
+     "testo": "Ti ho messo in mano la vita di quelle ragazze e tu hai fatto un disastro."
+    },
+    {
+     "inizio": 10.84,
+     "fine": 13.75,
+     "testo": "Ti stacco la spina prima che tu faccia altri danni."
+    },
+    {
+     "inizio": 13.8,
+     "fine": 15.33,
+     "testo": "Chiudo il collegamento."
+    }
+   ]
+  },
+  {
+   "clip": "clip0138",
+   "battute": [
+    {
+     "inizio": 1.72,
+     "fine": 4.25,
+     "testo": "Dai, prendiamo un po' d'aria, va bene?"
+    },
+    {
+     "inizio": 7.98,
+     "fine": 10.45,
+     "testo": "Abbiamo grossi, grossi problemi."
+    },
+    {
+     "inizio": 10.5,
+     "fine": 12.72,
+     "testo": "Cosa? – Gli Auger sono qui."
+    },
+    {
+     "inizio": 12.78,
+     "fine": 16.11,
+     "testo": "D'accordo, scendo e reimposto il codice d'accesso."
+    },
+    {
+     "inizio": 17.96,
+     "fine": 20.61,
+     "testo": "Oh, e adesso cosa c'è?"
+    },
+    {
+     "inizio": 20.66,
+     "fine": 21.53,
+     "testo": "Cos'è stato?"
+    },
+    {
+     "inizio": 21.58,
+     "fine": 23.38,
+     "testo": "Non lo so, veniva da fuori."
+    }
+   ]
+  },
+  {
+   "clip": "clip0139",
+   "battute": [
+    {
+     "inizio": 2.64,
+     "fine": 4.61,
+     "testo": "Cioè, aveva gli occhi verdi."
+    },
+    {
+     "inizio": 4.66,
+     "fine": 6.99,
+     "testo": "Vado a prenderne un po'. – Va bene."
+    },
+    {
+     "inizio": 15.18,
+     "fine": 16.58,
+     "testo": "Che c'è? Tutto bene?"
+    },
+    {
+     "inizio": 16.86,
+     "fine": 18.63,
+     "testo": "Credo di sì. Mi sono solo spaventata."
+    },
+    {
+     "inizio": 18.68,
+     "fine": 19.39,
+     "testo": "Che cosa vuoi?"
+    },
+    {
+     "inizio": 19.44,
+     "fine": 21.51,
+     "testo": "Beh, io... volevo solo..."
+    },
+    {
+     "inizio": 21.56,
+     "fine": 23.38,
+     "testo": "State tutti bene?"
+    },
+    {
+     "inizio": 23.82,
+     "fine": 26.23,
+     "testo": "Ehi, senti, non è una buona idea che tu te ne vada in giro qui di notte."
+    },
+    {
+     "inizio": 26.28,
+     "fine": 27.23,
+     "testo": "Perché non te ne torni a casa, eh?"
+    },
+    {
+     "inizio": 27.28,
+     "fine": 29.01,
+     "testo": "Aspetta! Sei in pericolo!"
+    },
+    {
+     "inizio": 29.06,
+     "fine": 29.93,
+     "testo": "Le hai viste anche tu, quelle cose?"
+    },
+    {
+     "inizio": 29.98,
+     "fine": 32.17,
+     "testo": "Cosa sono?"
+    },
+    {
+     "inizio": 32.22,
+     "fine": 36.24,
+     "testo": "Beh, si chiamano Auger. E sono come dei vampiri."
+    },
+    {
+     "inizio": 36.48,
+     "fine": 38.89,
+     "testo": "Vuoi dire che succhiano il sangue? – Sì."
+    },
+    {
+     "inizio": 38.94,
+     "fine": 41.99,
+     "testo": "Non è niente di personale. È l'unico modo che hanno per restare vivi."
+    },
+    {
+     "inizio": 42.04,
+     "fine": 45.09,
+     "testo": "Quasi tutti sono così affamati che la pelle gli cade dalle ossa."
+    },
+    {
+     "inizio": 45.14,
+     "fine": 47.33,
+     "testo": "Ecco perché si vestono in quel modo strano."
+    },
+    {
+     "inizio": 47.38,
+     "fine": 48.89,
+     "testo": "Dobbiamo avvisare gli altri."
+    },
+    {
+     "inizio": 48.94,
+     "fine": 51.45,
+     "testo": "Aspetta. Anche alcuni di loro potrebbero essere vampiri."
+    },
+    {
+     "inizio": 51.5,
+     "fine": 52.92,
+     "testo": "Cosa possiamo fare?"
+    },
+    {
+     "inizio": 52.98,
+     "fine": 56.12,
+     "testo": "Reagire. – Come? – Con queste."
+    },
+    {
+     "inizio": 56.64,
+     "fine": 62.96,
+     "testo": "Cosa sono? – Pistole laser speciali. Le ho fatte io. Basta puntare e sparare."
+    },
+    {
+     "inizio": 66.32,
+     "fine": 71.79,
+     "testo": "Va bene. Ecco, tu prendi questa ed entra dal davanti, io faccio il giro dal retro."
+    }
+   ]
+  },
+  {
+   "clip": "clip0140",
+   "battute": [
+    {
+     "inizio": 1.28,
+     "fine": 3.21,
+     "testo": "Non hai capito come funziona."
+    },
+    {
+     "inizio": 3.36,
+     "fine": 5.59,
+     "testo": "Devi intrappolare molte più di quelle sanguisughe."
+    },
+    {
+     "inizio": 5.64,
+     "fine": 7.1,
+     "testo": "Così non va."
+    },
+    {
+     "inizio": 7.16,
+     "fine": 10.03,
+     "testo": "Hai messo in pericolo quelle ragazze. Vuol dire che sei fuori."
+    },
+    {
+     "inizio": 10.08,
+     "fine": 11.61,
+     "testo": "Chiudo il collegamento."
+    }
+   ]
+  }
+ ]
+}

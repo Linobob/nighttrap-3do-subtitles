@@ -1,0 +1,6 @@
+*.iso
+*.bin
+*.cue
+*.bps
+uscita/
+__pycache__/

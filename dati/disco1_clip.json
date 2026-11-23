@@ -1,0 +1,858 @@
+{
+"disco": 1,
+"nota": "offset = posizione (in byte, dentro il file dati del disco) del primo record audio della clip",
+"clip": [
+{
+"clip": "clip0000",
+"offset": 15308,
+"fotogrammi": 59,
+"timecode": "00:00:00:00"
+},
+{
+"clip": "clip0001",
+"offset": 2517964,
+"fotogrammi": 121,
+"timecode": "00:00:00:00"
+},
+{
+"clip": "clip0002",
+"offset": 4505548,
+"fotogrammi": 160,
+"timecode": "00:59:45:29"
+},
+{
+"clip": "clip0003",
+"offset": 7134156,
+"fotogrammi": 360,
+"timecode": "00:00:00:00"
+},
+{
+"clip": "clip0004",
+"offset": 13047756,
+"fotogrammi": 793,
+"timecode": "01:00:30:00"
+},
+{
+"clip": "clip0005",
+"offset": 26074060,
+"fotogrammi": 545,
+"timecode": "01:01:36:00"
+},
+{
+"clip": "clip0006",
+"offset": 35027916,
+"fotogrammi": 268,
+"timecode": "01:00:00:00"
+},
+{
+"clip": "clip0007",
+"offset": 39431116,
+"fotogrammi": 521,
+"timecode": "01:00:00:00"
+},
+{
+"clip": "clip0008",
+"offset": 47989708,
+"fotogrammi": 58,
+"timecode": "01:00:13:04"
+},
+{
+"clip": "clip0009",
+"offset": 48944076,
+"fotogrammi": 69,
+"timecode": "01:00:18:02"
+},
+{
+"clip": "clip0010",
+"offset": 50078668,
+"fotogrammi": 44,
+"timecode": "01:00:23:22"
+},
+{
+"clip": "clip0011",
+"offset": 50817484,
+"fotogrammi": 39,
+"timecode": "01:00:27:18"
+},
+{
+"clip": "clip0012",
+"offset": 51459020,
+"fotogrammi": 60,
+"timecode": "01:00:27:14"
+},
+{
+"clip": "clip0013",
+"offset": 52446156,
+"fotogrammi": 45,
+"timecode": "01:00:31:04"
+},
+{
+"clip": "clip0014",
+"offset": 53185484,
+"fotogrammi": 143,
+"timecode": "01:00:35:22"
+},
+{
+"clip": "clip0015",
+"offset": 55534540,
+"fotogrammi": 39,
+"timecode": "01:00:35:24"
+},
+{
+"clip": "clip0016",
+"offset": 56175564,
+"fotogrammi": 51,
+"timecode": "01:00:43:12"
+},
+{
+"clip": "clip0017",
+"offset": 57015244,
+"fotogrammi": 69,
+"timecode": "01:00:48:02"
+},
+{
+"clip": "clip0018",
+"offset": 58149836,
+"fotogrammi": 121,
+"timecode": "01:00:50:02"
+},
+{
+"clip": "clip0019",
+"offset": 60138444,
+"fotogrammi": 49,
+"timecode": "01:00:50:02"
+},
+{
+"clip": "clip0020",
+"offset": 60945356,
+"fotogrammi": 99,
+"timecode": "01:00:54:02"
+},
+{
+"clip": "clip0021",
+"offset": 62573516,
+"fotogrammi": 190,
+"timecode": "01:00:54:22"
+},
+{
+"clip": "clip0022",
+"offset": 65694668,
+"fotogrammi": 170,
+"timecode": "01:01:00:12"
+},
+{
+"clip": "clip0023",
+"offset": 68488140,
+"fotogrammi": 136,
+"timecode": "01:01:07:10"
+},
+{
+"clip": "clip0024",
+"offset": 70722508,
+"fotogrammi": 390,
+"timecode": "01:01:15:22"
+},
+{
+"clip": "clip0025",
+"offset": 77147084,
+"fotogrammi": 118,
+"timecode": "01:01:20:04"
+},
+{
+"clip": "clip0026",
+"offset": 79086540,
+"fotogrammi": 65,
+"timecode": "01:01:24:06"
+},
+{
+"clip": "clip0027",
+"offset": 80155596,
+"fotogrammi": 140,
+"timecode": "01:01:32:02"
+},
+{
+"clip": "clip0028",
+"offset": 82455500,
+"fotogrammi": 50,
+"timecode": "01:01:39:18"
+},
+{
+"clip": "clip0029",
+"offset": 83278796,
+"fotogrammi": 913,
+"timecode": "01:01:44:04"
+},
+{
+"clip": "clip0030",
+"offset": 98276300,
+"fotogrammi": 635,
+"timecode": "01:03:00:08"
+},
+{
+"clip": "clip0031",
+"offset": 108725196,
+"fotogrammi": 733,
+"timecode": "01:01:48:12"
+},
+{
+"clip": "clip0032",
+"offset": 120783820,
+"fotogrammi": 79,
+"timecode": "01:01:50:24"
+},
+{
+"clip": "clip0033",
+"offset": 122098636,
+"fotogrammi": 113,
+"timecode": "01:01:57:22"
+},
+{
+"clip": "clip0034",
+"offset": 123986892,
+"fotogrammi": 668,
+"timecode": "01:02:12:24"
+},
+{
+"clip": "clip0035",
+"offset": 134960076,
+"fotogrammi": 236,
+"timecode": "01:02:39:06"
+},
+{
+"clip": "clip0036",
+"offset": 138836940,
+"fotogrammi": 350,
+"timecode": "01:02:50:02"
+},
+{
+"clip": "clip0037",
+"offset": 144604108,
+"fotogrammi": 80,
+"timecode": "01:02:59:02"
+},
+{
+"clip": "clip0038",
+"offset": 145918924,
+"fotogrammi": 329,
+"timecode": "01:03:06:02"
+},
+{
+"clip": "clip0039",
+"offset": 151323596,
+"fotogrammi": 94,
+"timecode": "01:03:15:04"
+},
+{
+"clip": "clip0040",
+"offset": 152867788,
+"fotogrammi": 120,
+"timecode": "01:03:23:02"
+},
+{
+"clip": "clip0041",
+"offset": 154855372,
+"fotogrammi": 39,
+"timecode": "01:03:33:10"
+},
+{
+"clip": "clip0042",
+"offset": 155497420,
+"fotogrammi": 75,
+"timecode": "01:03:26:24"
+},
+{
+"clip": "clip0043",
+"offset": 156746700,
+"fotogrammi": 59,
+"timecode": "01:03:33:08"
+},
+{
+"clip": "clip0044",
+"offset": 157717452,
+"fotogrammi": 205,
+"timecode": "01:03:33:24"
+},
+{
+"clip": "clip0045",
+"offset": 161102796,
+"fotogrammi": 378,
+"timecode": "01:03:37:06"
+},
+{
+"clip": "clip0046",
+"offset": 167328716,
+"fotogrammi": 60,
+"timecode": "01:03:42:24"
+},
+{
+"clip": "clip0047",
+"offset": 168315852,
+"fotogrammi": 103,
+"timecode": "01:03:48:10"
+},
+{
+"clip": "clip0048",
+"offset": 170025932,
+"fotogrammi": 1062,
+"timecode": "01:03:54:06"
+},
+{
+"clip": "clip0049",
+"offset": 187503564,
+"fotogrammi": 247,
+"timecode": "01:04:00:04"
+},
+{
+"clip": "clip0050",
+"offset": 191579084,
+"fotogrammi": 102,
+"timecode": "01:04:12:08"
+},
+{
+"clip": "clip0051",
+"offset": 193256396,
+"fotogrammi": 209,
+"timecode": "01:04:16:06"
+},
+{
+"clip": "clip0052",
+"offset": 196690892,
+"fotogrammi": 125,
+"timecode": "01:04:23:06"
+},
+{
+"clip": "clip0053",
+"offset": 198745036,
+"fotogrammi": 43,
+"timecode": "01:04:27:04"
+},
+{
+"clip": "clip0054",
+"offset": 199467980,
+"fotogrammi": 100,
+"timecode": "01:04:30:24"
+},
+{
+"clip": "clip0055",
+"offset": 201112524,
+"fotogrammi": 127,
+"timecode": "01:04:34:04"
+},
+{
+"clip": "clip0056",
+"offset": 203215820,
+"fotogrammi": 35,
+"timecode": "01:04:39:04"
+},
+{
+"clip": "clip0057",
+"offset": 203807692,
+"fotogrammi": 404,
+"timecode": "01:04:44:24"
+},
+{
+"clip": "clip0058",
+"offset": 210445260,
+"fotogrammi": 58,
+"timecode": "01:04:45:16"
+},
+{
+"clip": "clip0059",
+"offset": 211399628,
+"fotogrammi": 53,
+"timecode": "01:04:48:14"
+},
+{
+"clip": "clip0060",
+"offset": 212272076,
+"fotogrammi": 103,
+"timecode": "01:04:51:10"
+},
+{
+"clip": "clip0061",
+"offset": 213982156,
+"fotogrammi": 57,
+"timecode": "01:04:56:02"
+},
+{
+"clip": "clip0062",
+"offset": 214920140,
+"fotogrammi": 53,
+"timecode": "01:05:00:00"
+},
+{
+"clip": "clip0063",
+"offset": 215806924,
+"fotogrammi": 80,
+"timecode": "01:05:04:18"
+},
+{
+"clip": "clip0064",
+"offset": 217121740,
+"fotogrammi": 66,
+"timecode": "01:05:04:14"
+},
+{
+"clip": "clip0065",
+"offset": 218207180,
+"fotogrammi": 717,
+"timecode": "01:05:11:06"
+},
+{
+"clip": "clip0066",
+"offset": 230015948,
+"fotogrammi": 169,
+"timecode": "01:05:22:22"
+},
+{
+"clip": "clip0067",
+"offset": 232793036,
+"fotogrammi": 330,
+"timecode": "01:05:30:06"
+},
+{
+"clip": "clip0068",
+"offset": 238230476,
+"fotogrammi": 80,
+"timecode": "01:05:33:06"
+},
+{
+"clip": "clip0069",
+"offset": 239545292,
+"fotogrammi": 115,
+"timecode": "01:05:37:04"
+},
+{
+"clip": "clip0070",
+"offset": 241451980,
+"fotogrammi": 2639,
+"timecode": "01:05:42:12"
+},
+{
+"clip": "clip0071",
+"offset": 284818380,
+"fotogrammi": 63,
+"timecode": "01:05:54:16"
+},
+{
+"clip": "clip0072",
+"offset": 285854668,
+"fotogrammi": 247,
+"timecode": "01:06:02:22"
+},
+{
+"clip": "clip0073",
+"offset": 289913804,
+"fotogrammi": 39,
+"timecode": "01:06:08:06"
+},
+{
+"clip": "clip0074",
+"offset": 290601932,
+"fotogrammi": 103,
+"timecode": "01:06:11:06"
+},
+{
+"clip": "clip0075",
+"offset": 292312012,
+"fotogrammi": 177,
+"timecode": "01:06:12:10"
+},
+{
+"clip": "clip0076",
+"offset": 295220172,
+"fotogrammi": 70,
+"timecode": "01:06:20:02"
+},
+{
+"clip": "clip0077",
+"offset": 296371148,
+"fotogrammi": 135,
+"timecode": "01:06:26:06"
+},
+{
+"clip": "clip0078",
+"offset": 298605516,
+"fotogrammi": 1076,
+"timecode": "01:06:30:04"
+},
+{
+"clip": "clip0079",
+"offset": 316281804,
+"fotogrammi": 56,
+"timecode": "01:06:34:04"
+},
+{
+"clip": "clip0080",
+"offset": 317203404,
+"fotogrammi": 58,
+"timecode": "01:06:39:16"
+},
+{
+"clip": "clip0081",
+"offset": 318157772,
+"fotogrammi": 142,
+"timecode": "01:06:47:02"
+},
+{
+"clip": "clip0082",
+"offset": 320490444,
+"fotogrammi": 153,
+"timecode": "01:06:50:22"
+},
+{
+"clip": "clip0083",
+"offset": 323005388,
+"fotogrammi": 333,
+"timecode": "01:06:59:04"
+},
+{
+"clip": "clip0084",
+"offset": 328475596,
+"fotogrammi": 87,
+"timecode": "01:07:05:10"
+},
+{
+"clip": "clip0085",
+"offset": 329921484,
+"fotogrammi": 307,
+"timecode": "01:07:16:06"
+},
+{
+"clip": "clip0086",
+"offset": 334982092,
+"fotogrammi": 100,
+"timecode": "01:07:27:14"
+},
+{
+"clip": "clip0087",
+"offset": 336626636,
+"fotogrammi": 137,
+"timecode": "01:07:39:04"
+},
+{
+"clip": "clip0088",
+"offset": 338877388,
+"fotogrammi": 69,
+"timecode": "01:07:42:04"
+},
+{
+"clip": "clip0089",
+"offset": 340011980,
+"fotogrammi": 109,
+"timecode": "01:07:50:24"
+},
+{
+"clip": "clip0090",
+"offset": 341803980,
+"fotogrammi": 117,
+"timecode": "01:07:51:18"
+},
+{
+"clip": "clip0091",
+"offset": 343727052,
+"fotogrammi": 410,
+"timecode": "01:08:00:04"
+},
+{
+"clip": "clip0092",
+"offset": 350479308,
+"fotogrammi": 36,
+"timecode": "01:08:00:04"
+},
+{
+"clip": "clip0093",
+"offset": 351087052,
+"fotogrammi": 70,
+"timecode": "01:08:03:12"
+},
+{
+"clip": "clip0094",
+"offset": 352238540,
+"fotogrammi": 93,
+"timecode": "01:08:03:06"
+},
+{
+"clip": "clip0095",
+"offset": 353766348,
+"fotogrammi": 122,
+"timecode": "01:08:09:18"
+},
+{
+"clip": "clip0096",
+"offset": 355771340,
+"fotogrammi": 159,
+"timecode": "01:08:14:22"
+},
+{
+"clip": "clip0097",
+"offset": 358384588,
+"fotogrammi": 134,
+"timecode": "01:08:24:10"
+},
+{
+"clip": "clip0098",
+"offset": 360586188,
+"fotogrammi": 190,
+"timecode": "01:08:28:04"
+},
+{
+"clip": "clip0099",
+"offset": 363738060,
+"fotogrammi": 111,
+"timecode": "01:08:34:16"
+},
+{
+"clip": "clip0100",
+"offset": 365579212,
+"fotogrammi": 80,
+"timecode": "01:08:40:14"
+},
+{
+"clip": "clip0101",
+"offset": 366894028,
+"fotogrammi": 669,
+"timecode": "01:08:46:04"
+},
+{
+"clip": "clip0102",
+"offset": 377899980,
+"fotogrammi": 321,
+"timecode": "01:08:47:02"
+},
+{
+"clip": "clip0103",
+"offset": 383173580,
+"fotogrammi": 208,
+"timecode": "01:08:47:12"
+},
+{
+"clip": "clip0104",
+"offset": 386591692,
+"fotogrammi": 67,
+"timecode": "01:09:12:02"
+},
+{
+"clip": "clip0105",
+"offset": 387709900,
+"fotogrammi": 132,
+"timecode": "01:09:15:18"
+},
+{
+"clip": "clip0106",
+"offset": 389878732,
+"fotogrammi": 68,
+"timecode": "01:09:19:28"
+},
+{
+"clip": "clip0107",
+"offset": 390996940,
+"fotogrammi": 53,
+"timecode": "01:09:23:02"
+},
+{
+"clip": "clip0108",
+"offset": 391869388,
+"fotogrammi": 611,
+"timecode": "01:09:28:00"
+},
+{
+"clip": "clip0109",
+"offset": 401923020,
+"fotogrammi": 745,
+"timecode": "01:09:33:04"
+},
+{
+"clip": "clip0110",
+"offset": 414194636,
+"fotogrammi": 126,
+"timecode": "01:09:44:26"
+},
+{
+"clip": "clip0111",
+"offset": 416265164,
+"fotogrammi": 518,
+"timecode": "01:09:49:18"
+},
+{
+"clip": "clip0112",
+"offset": 424774604,
+"fotogrammi": 165,
+"timecode": "01:10:15:04"
+},
+{
+"clip": "clip0113",
+"offset": 427486156,
+"fotogrammi": 810,
+"timecode": "01:10:19:08"
+},
+{
+"clip": "clip0114",
+"offset": 440900556,
+"fotogrammi": 261,
+"timecode": "01:10:29:04"
+},
+{
+"clip": "clip0115",
+"offset": 445189068,
+"fotogrammi": 1846,
+"timecode": "01:10:33:02"
+},
+{
+"clip": "clip0116",
+"offset": 475546572,
+"fotogrammi": 55,
+"timecode": "01:10:48:24"
+},
+{
+"clip": "clip0117",
+"offset": 476468172,
+"fotogrammi": 144,
+"timecode": "01:10:51:04"
+},
+{
+"clip": "clip0118",
+"offset": 478833612,
+"fotogrammi": 45,
+"timecode": "01:10:55:06"
+},
+{
+"clip": "clip0119",
+"offset": 479572940,
+"fotogrammi": 45,
+"timecode": "01:10:59:12"
+},
+{
+"clip": "clip0120",
+"offset": 480312268,
+"fotogrammi": 518,
+"timecode": "01:11:03:18"
+},
+{
+"clip": "clip0121",
+"offset": 488838092,
+"fotogrammi": 582,
+"timecode": "01:11:15:14"
+},
+{
+"clip": "clip0122",
+"offset": 498400204,
+"fotogrammi": 86,
+"timecode": "01:11:31:24"
+},
+{
+"clip": "clip0123",
+"offset": 499813324,
+"fotogrammi": 168,
+"timecode": "01:11:44:24"
+},
+{
+"clip": "clip0124",
+"offset": 502574028,
+"fotogrammi": 944,
+"timecode": "01:11:51:02"
+},
+{
+"clip": "clip0125",
+"offset": 518081484,
+"fotogrammi": 64,
+"timecode": "01:11:59:02"
+},
+{
+"clip": "clip0126",
+"offset": 519132620,
+"fotogrammi": 64,
+"timecode": "01:12:04:14"
+},
+{
+"clip": "clip0127",
+"offset": 520246220,
+"fotogrammi": 64,
+"timecode": "01:12:04:14"
+},
+{
+"clip": "clip0128",
+"offset": 521298892,
+"fotogrammi": 95,
+"timecode": "01:12:10:02"
+},
+{
+"clip": "clip0129",
+"offset": 522875852,
+"fotogrammi": 49,
+"timecode": "01:12:18:04"
+},
+{
+"clip": "clip0130",
+"offset": 523697100,
+"fotogrammi": 139,
+"timecode": "01:12:22:14"
+},
+{
+"clip": "clip0131",
+"offset": 525980620,
+"fotogrammi": 51,
+"timecode": "01:12:18:02"
+},
+{
+"clip": "clip0132",
+"offset": 526836684,
+"fotogrammi": 940,
+"timecode": "01:12:24:06"
+},
+{
+"clip": "clip0133",
+"offset": 542278604,
+"fotogrammi": 154,
+"timecode": "01:12:38:08"
+},
+{
+"clip": "clip0134",
+"offset": 544809932,
+"fotogrammi": 221,
+"timecode": "01:12:51:10"
+},
+{
+"clip": "clip0135",
+"offset": 548441036,
+"fotogrammi": 165,
+"timecode": "01:13:07:10"
+},
+{
+"clip": "clip0136",
+"offset": 551152588,
+"fotogrammi": 205,
+"timecode": "01:13:09:28"
+},
+{
+"clip": "clip0137",
+"offset": 554521548,
+"fotogrammi": 120,
+"timecode": "01:13:16:08"
+},
+{
+"clip": "clip0138",
+"offset": 556493772,
+"fotogrammi": 331,
+"timecode": "01:13:21:10"
+},
+{
+"clip": "clip0139",
+"offset": 561931212,
+"fotogrammi": 899,
+"timecode": "01:13:26:18"
+},
+{
+"clip": "clip0140",
+"offset": 576715724,
+"fotogrammi": 154,
+"timecode": "01:13:42:18"
+},
+{
+"clip": "clip0141",
+"offset": 579247052,
+"fotogrammi": 1759,
+"timecode": "00:00:00:02"
+}
+]
+}
