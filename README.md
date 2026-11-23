@@ -5,7 +5,9 @@
 Sottotitoli in italiano per **Night Trap** (Digital Pictures, 1993), versione **3DO USA** su due dischi,
 e lo strumento per crearli (anche in altre lingue).
 
-- I sottotitoli compaiono **dentro il video**, sia nelle scene a tutto schermo sia nella finestra di gioco.
+- I sottotitoli compaiono **dentro il video**, sia nelle scene a tutto schermo sia nella finestra di gioco,
+  con lettere **maiuscole e minuscole, accenti** e un **bordo nero** che li rende leggibili su ogni sfondo
+  (dalla v1.1; la v1.0 usava il font di sistema, solo maiuscole senza accenti).
 - Quando un personaggio annuncia il nuovo **codice d'accesso**, compare in cima al video il colore
   scelto dal gioco in quella partita (es. «NUOVO CODICE: GIALLO»), scritto nel suo colore.
 - Funziona anche il **cambio disco**: la partita continua sul disco 2, sottotitoli compresi.
@@ -72,9 +74,11 @@ Lo strumento controlla che le ISO siano quelle giuste e si ferma senza scrivere 
    e la frase del codice (`{colore}` viene sostituito dal nome del colore).
 4. `python3 crea_patch.py --lingua xx --iso1 ... --iso2 ... --bps`
 
-Il font del gioco ha **solo lettere maiuscole senza accenti**. In `lingua.json`, sotto `sostituzioni`,
-si decide come scrivere le lettere che mancano (per l'italiano `è` → `E'`). Le righe vanno a capo
-da sole (massimo 29 caratteri, 2 righe per schermata); le battute lunghe vengono divise in più schermate.
+Il font (DejaVu Sans Bold 11, in `font/`) ha minuscole, maiuscole e tutti gli accenti dell'Europa
+occidentale e centrale (Latin-1 e Latin-2). Se una lettera manca, viene usata la stessa senza accento,
+altrimenti `?`; lo strumento elenca i caratteri mancanti. In `lingua.json`, sotto `sostituzioni`, si possono
+indicare sostituzioni proprie. Le righe vanno a capo da sole (al massimo 260 pixel, 2 righe per schermata);
+le battute lunghe vengono divise in schermate di lunghezza simile, di preferenza a fine frase.
 
 ## Struttura
 
@@ -86,10 +90,13 @@ nighttrap/
   stream.py          fotogrammi dello stream video Digital Pictures
   launchme.py        nuovo eseguibile del gioco con il codice dei sottotitoli
   armasm.py          piccolo assemblatore ARM (big-endian, ARM60)
-  testo.py           preparazione dei testi per il font del gioco
+  testo3do.py        routine ARM che scrive il testo nel framebuffer con il font
+  font.py            lettura del font bitmap, misure, a capo in pixel
+  testo.py           pagine dei sottotitoli e codifica dei testi
   bps.py             creazione delle patch BPS
   dischi.py          indirizzi e dati fissi dei due dischi
 dati/                posizione delle scene video nei due dischi
+font/                font bitmap (DejaVu Sans Bold 11) e sua licenza
 lingue/it/           sottotitoli italiani
 docs/                documentazione tecnica
 test/                strumenti per i test
@@ -101,7 +108,7 @@ Come funziona: vedi [docs/tecnico.md](docs/tecnico.md).
 
 Il repository non contiene nessun file del gioco: lo strumento lavora sulle ISO originali, che devi avere tu.
 Night Trap è un marchio dei rispettivi proprietari; questo è un progetto amatoriale senza scopo di lucro.
-Codice sotto licenza MIT (vedi `LICENSE`).
+Codice sotto licenza MIT (vedi `LICENSE`). Il font bitmap deriva da DejaVu Sans Bold (vedi `font/LICENZE.md`).
 
 ---
 
@@ -111,7 +118,8 @@ Codice sotto licenza MIT (vedi `LICENSE`).
 Italian subtitles for **Night Trap** (Digital Pictures, 1993), **US 3DO** two-disc release,
 plus the tool that builds them (other languages welcome).
 
-- Subtitles are drawn **inside the video**, both in full-screen scenes and in the in-game camera window.
+- Subtitles are drawn **inside the video**, both in full-screen scenes and in the in-game camera window,
+  with upper/lower case, accented letters and a black outline (since v1.1).
 - When a character announces the new **access code**, the colour picked by the game for that playthrough
   is shown at the top of the video (e.g. "NUOVO CODICE: GIALLO"), drawn in that colour.
 - **Disc swap** works: the game continues on disc 2 with subtitles.
@@ -148,11 +156,12 @@ Options: `--lingua xx` (language folder in `lingue/`), `--uscita folder`, `--bps
    and the access-code sentence (`{colore}` is replaced by the colour name).
 4. `python3 crea_patch.py --lingua xx --iso1 ... --iso2 ... --bps`
 
-The game font only has **unaccented uppercase letters**; `sostituzioni` in `lingua.json` says how to write
-the missing ones. Lines wrap automatically (29 characters, 2 lines per screen).
+Since v1.1 subtitles use their own bitmap font (DejaVu Sans Bold 11, in `font/`) with upper and lower case,
+Latin-1 and Latin-2 accented letters and a black outline. Missing letters fall back to the unaccented letter
+or `?` (the tool lists them). Lines wrap automatically (260 pixels, 2 lines per screen).
 
 Technical notes (in Italian): [docs/tecnico.md](docs/tecnico.md).
 
 This repository contains no game data: the tool works on your own original ISOs.
 Night Trap is a trademark of its respective owners; this is a non-commercial fan project.
-Code released under the MIT license.
+Code released under the MIT license. The bitmap font is derived from DejaVu Sans Bold (see `font/LICENZE.md`).

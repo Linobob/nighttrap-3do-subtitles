@@ -70,20 +70,40 @@ Il codice nuovo usa solo indirizzi relativi al PC, quindi funziona dovunque veng
 ## 5. Disegnare il testo
 
 Dentro `PlayStreamingVideo` c'è un blocco di **debug** che disegna testo sul fotogramma con le routine
-del gioco (`MoveTo`, `SetFGPen`, `SetBGPen`, `DrawText8`), acceso da un byte (0x27d0c). La patch lo accende
-e ne sostituisce il contenuto con tre hook:
+di sistema (`MoveTo`, `SetFGPen`, `SetBGPen`, `DrawText8`), acceso da un byte (0x27d0c). La patch lo accende
+e ne sostituisce il contenuto con i suoi hook:
 
 - **hook1** (a 0x6370): legge i byte 4-7 del record video corrente; se c'è un marcatore salva l'`id`,
   altrimenti 0. Calcola anche dove sta il video sullo schermo:
   - scena a tutto schermo: bordo inferiore = 120 + altezza·4, bordo superiore = 120 − altezza·4;
   - finestra della telecamera: bordo superiore 16, inferiore 16 + altezza·8.
-- **hook2** (a 0x63cc): se `id` ≠ 0 disegna le righe della voce `id` (testo bianco, centrato,
-  11 pixel fra le righe) **dentro il bordo inferiore del video**. Il testo deve stare dentro il riquadro del
-  video: il fotogramma successivo lo ricopre e lo cancella. Una riga troppo larga lascerebbe pezzi di lettera
-  sul bordo (per questo le righe sono al massimo 29 caratteri, contati dopo la conversione degli accenti).
+- **hook2** (a 0x63cc): se `id` ≠ 0 disegna le righe della voce `id` **dentro il bordo inferiore del video**,
+  centrate, 14 pixel fra una riga e l'altra. Il testo deve stare dentro il riquadro del video: il fotogramma
+  successivo lo ricopre e lo cancella; un pezzo fuori dal riquadro resterebbe sullo schermo. Per questo le
+  righe sono larghe al massimo 260 pixel (la finestra della telecamera va da x=24 a x=297).
 
-Tabella dei testi: per ogni voce il numero di righe, poi per ogni riga la posizione x (1 byte),
-il testo ASCII maiuscolo e uno zero. Il font del gioco ha solo maiuscole senza accenti.
+**Font proprio (dalla v1.1).** `DrawText8` usa il font del sistema operativo, che ha solo ASCII maiuscolo.
+Dalla v1.1 hook2 non lo usa più: chiama `scrivi_riga`, una routine ARM (da `testo3do.py`, che viene dal
+repository [retro-tools](https://github.com/Linobob/retro-tools)) che scrive direttamente nei pixel dello
+schermo con un font bitmap (DejaVu Sans Bold 11, in `font/`), prima il bordo nero e poi le lettere.
+
+- **Dove sono i pixel:** il gioco usa la `ScreenContext` di Lib3DO (a 0x2841c): dopo `sc_BitmapItems[6]`
+  (0x28444) ci sono `sc_Bitmaps[6]` (0x2845c), puntatori alle `Bitmap`; nella `Bitmap` l'indirizzo dei pixel
+  (`bm_Buffer`) è a +0x24. L'indice dello schermo su cui si disegna è a 0x2847c.
+- **Formato dei pixel:** 320×240, 16 bit RGB555, righe a coppie: la parola a ((y>>1)·320 + x)·4 contiene il
+  pixel della riga pari nei 16 bit alti e quello della riga dispari nei 16 bit bassi (confermato sul MiSTer).
+  L'ARM60 non ha load/store a 16 bit: ogni pixel è una lettura-modifica-scrittura della parola.
+- **Costo:** circa 2000 istruzioni per carattere; due righe piene ≈ 140.000 istruzioni per fotogramma,
+  senza rallentamenti visibili sul MiSTer.
+
+Tabelle nel nuovo Launchme:
+- testi: per ogni voce il numero di righe, poi per ogni riga la posizione x (2 byte), gli indici dei
+  caratteri (1 byte ciascuno) e uno zero;
+- font: solo i caratteri usati dal disco (al massimo 255), con il disegno di ogni riga in una parola a 32 bit.
+
+Le battute lunghe si dividono in schermate di 2 righe di lunghezza simile, di preferenza dopo un punto,
+e il tempo della battuta si divide fra le schermate in proporzione ai caratteri (almeno 1,2 s ciascuna
+quando c'è tempo).
 
 ## 6. Il colore del codice d'accesso
 
@@ -106,7 +126,8 @@ non dentro il video:
 
 **hook4** (a 0x119dc, subito dopo `StartInstrument`): se la frase è partita, riconosce quale frase è dal
 momento, legge il colore dalla struttura di stato e avvia un conto alla rovescia di 60 fotogrammi (5 secondi).
-hook2 allora scrive in cima al video la frase del codice (es. «NUOVO CODICE: GIALLO») nel colore giusto.
+hook2 allora scrive in cima al video la frase del codice (es. «NUOVO CODICE: GIALLO») nel colore giusto,
+con lo stesso font e il bordo nero.
 Il conto alla rovescia scende solo quando c'è un video a schermo.
 
 ## 7. Il cambio disco
