@@ -13,9 +13,9 @@ Gli hook:
 """
 import struct
 from .armasm import Asm
+from .testo3do import emetti_routine
 from .dischi import RGB_COLORI, DURATA_COLORE
 
-PASSO_RIGA = 11   # pixel tra una riga e l'altra
 
 
 def reloc_table(d, TAB):
@@ -27,10 +27,12 @@ def reloc_table(d, TAB):
         T.append(w)
 
 
-def costruisci(ORIG, C, voci, voci_colore, test_cambio=False):
+def costruisci(ORIG, C, voci, voci_colore, font, alt_riga, test_cambio=False):
     """ORIG: Launchme originale; C: dati del disco (dischi.py);
-    voci: testi gia' pronti (Testi.voce), il primo ha id 1; voci_colore: 6 righe (Testi.riga).
+    voci: testi gia' pronti (Testi.voce), il primo ha id 1; voci_colore: 6 righe (Testi.riga);
+    font: tabella del font (Testi.tabella_font); alt_riga: pixel fra una riga e l'altra.
     Restituisce (nuovo Launchme, etichette)."""
+    ALT_RIGA=alt_riga
     RO=C['RO']; TAB=C['RELOC']+0xb8
     if len(voci)>65535: raise ValueError('troppi sottotitoli')
     # ---------- codice ----------
@@ -38,8 +40,8 @@ def costruisci(ORIG, C, voci, voci_colore, test_cambio=False):
     lab=A.lab
     delta_box=[0]
     RW=lambda a: (lambda: a+delta_box[0])          # indirizzi RW dopo lo spostamento
-    CUR=RW(C['CUR']); GCON=RW(C['GCON']); SEL=RW(C['SEL']); BMS=RW(C['BMS'])
-    MOVETO=C['MOVETO']; SETFG=C['SETFG']; SETBG=C['SETBG']; DRAW=C['DRAW']
+    CUR=RW(C['CUR']); SEL=RW(C['SEL'])
+    BITMAPS=RW(C['BMS']+0x18)    # ScreenContext: sc_BitmapItems[6] e subito dopo sc_Bitmaps[6]
     # hook1: salva altezza video (byte 0xb) e marcatore [id] del fotogramma (r4)
     A.label('hook1')
     A.addr('r1',CUR)
@@ -62,40 +64,42 @@ def costruisci(ORIG, C, voci, voci_colore, test_cambio=False):
     A.ldst(1,0,'r0','r1',0); A.dp('cmp',0,'r0',0)
     A.dp('sub','r0','r0',1,c='gt'); A.ldst(0,0,'r0','r1',0,c='gt')
     A.mov('r0','r4'); A.mov('pc','lr')
-    # hook2: disegna il sottotitolo dentro il fondo del video
+    # hook2: disegna il sottotitolo dentro il fondo del video, con la routine scrivi_riga (font proprio)
     A.label('hook2')
     A.stmfd(['r4','r5','r6','r7','r8','lr'])
-    A.addr('r7',GCON)
-    A.addr('r0',SEL); A.ldst(1,0,'r0','r0',0)
-    A.addr('r1',BMS); A.ldst(1,0,'r8','r1',regoff='r0',lsl=2)
+    A.addr('r5',lambda: lab['CTX'])
+    A.addr('r0',SEL); A.ldst(1,0,'r0','r0',0)                     # schermo corrente
+    A.addr('r1',BITMAPS); A.ldst(1,0,'r1','r1',regoff='r0',lsl=2) # sc_Bitmaps[schermo]
+    A.ldst(1,0,'r1','r1',0x24); A.ldst(0,0,'r1','r5',0)           # bm_Buffer -> contesto
+    A.addr('r1',lambda: lab['FONT']); A.ldst(0,0,'r1','r5',12)
     # colore del codice appena annunciato, in cima al video
-    A.addr('r5',lambda: lab['VARS']); A.ldst(1,0,'r0','r5',0); A.dp('cmp',0,'r0',0); A.b('dial','eq')
-    A.ldst(1,0,'r6','r5',4); A.ldst(1,0,'r4','r5',8); A.dp('add','r4','r4',3)
-    A.mov('r0','r7'); A.mov('r1',0); A.bl(SETBG)
-    A.addr('r1',lambda: lab['COLS']); A.ldst(1,0,'r1','r1',regoff='r6',lsl=2)
-    A.mov('r0','r7'); A.bl(SETFG)
-    A.addr('r5',lambda: lab['CTAB']); A.dp('add','r5','r5','r6',sh=('lsl',6))
-    A.ldst(1,1,'r1','r5',1,post=True)
-    A.mov('r0','r7'); A.mov('r2','r4'); A.bl(MOVETO)
-    A.mov('r0','r7'); A.mov('r1','r8'); A.mov('r2','r5'); A.bl(DRAW)
+    A.addr('r6',lambda: lab['VARS']); A.ldst(1,0,'r0','r6',0); A.dp('cmp',0,'r0',0); A.b('dial','eq')
+    A.ldst(1,0,'r0','r6',4)                                       # indice del colore
+    A.addr('r1',lambda: lab['COLS']); A.ldst(1,0,'r1','r1',regoff='r0',lsl=2)
+    A.ldst(0,0,'r1','r5',16)
+    A.addr('r3',lambda: lab['CTAB']); A.ldst(1,0,'r2','r3',regoff='r0',lsl=2); A.dp('add','r3','r3','r2')
+    A.ldst(1,1,'r1','r3',1,post=True); A.ldst(1,1,'r2','r3',1,post=True)
+    A.dp('orr','r1','r2','r1',sh=('lsl',8))                       # x
+    A.ldst(1,0,'r2','r6',8); A.dp('add','r2','r2',3)              # y = cima del video + 3
+    A.mov('r0','r5'); A.bl('scrivi_riga')
+    A.mov('r1',0x7f00); A.dp('orr','r1','r1',0xff); A.ldst(0,0,'r1','r5',16)   # di nuovo bianco
     A.label('dial')
     A.addr('r4',CUR); A.ldst(1,0,'r0','r4',0); A.dp('cmp',0,'r0',0); A.b('fine','eq')
     A.ldst(1,1,'r4','r4',4)                       # fondo del video (calcolato in hook1)
-    A.addr('r5',lambda: lab['TABLE']); A.ldst(1,0,'r1','r5',regoff='r0',lsl=2); A.dp('add','r5','r5','r1')
-    A.ldst(1,1,'r6','r5',1,post=True)             # numero di righe
-    A.dp('add','r1','r6','r6',sh=('lsl',1)); A.dp('add','r1','r1','r6',sh=('lsl',3))  # n*11
-    A.dp('sub','r4','r4','r1'); A.dp('sub','r4','r4',2)
-    A.mov('r0','r7'); A.mov('r1',0); A.bl(SETBG)
-    A.mov('r0','r7'); A.mov('r1',0x7f00); A.dp('orr','r1','r1',0xff); A.bl(SETFG)
+    A.addr('r7',lambda: lab['TABLE']); A.ldst(1,0,'r1','r7',regoff='r0',lsl=2); A.dp('add','r7','r7','r1')
+    A.ldst(1,1,'r6','r7',1,post=True)             # numero di righe
+    A.mov('r1',ALT_RIGA); A.mul('r2','r6','r1')
+    A.dp('sub','r4','r4','r2'); A.dp('sub','r4','r4',2)   # y della prima riga
     A.label('riga')
     A.dp('cmp',0,'r6',0); A.b('fine','eq')
-    A.ldst(1,1,'r1','r5',1,post=True)             # x
-    A.mov('r0','r7'); A.mov('r2','r4'); A.bl(MOVETO)
-    A.mov('r0','r7'); A.mov('r1','r8'); A.mov('r2','r5'); A.bl(DRAW)
-    A.label('salta'); A.ldst(1,1,'r0','r5',1,post=True); A.dp('cmp',0,'r0',0); A.b('salta','ne')
-    A.dp('add','r4','r4',PASSO_RIGA); A.dp('sub','r6','r6',1)
+    A.ldst(1,1,'r1','r7',1,post=True); A.ldst(1,1,'r2','r7',1,post=True)
+    A.dp('orr','r1','r2','r1',sh=('lsl',8))       # x
+    A.mov('r0','r5'); A.mov('r2','r4'); A.mov('r3','r7'); A.bl('scrivi_riga')
+    A.label('salta'); A.ldst(1,1,'r0','r7',1,post=True); A.dp('cmp',0,'r0',0); A.b('salta','ne')
+    A.dp('add','r4','r4',ALT_RIGA); A.dp('sub','r6','r6',1)
     A.b('riga')
     A.label('fine'); A.ldmfd(['r4','r5','r6','r7','r8','pc'])
+    emetti_routine(A, 'scrivi_riga')
     if test_cambio:
         # PROVA: all'avvio della partita imposta uno stato valido per il disco 2 e chiama il cambio disco
         A.label('hook3')
@@ -126,10 +130,14 @@ def costruisci(ORIG, C, voci, voci_colore, test_cambio=False):
     A.word(0xffffffff)
     A.label('COLS')
     for c in RGB_COLORI: A.word(c)
-    A.label('CTAB')
-    for v in voci_colore:
-        if len(v)>64: raise ValueError('frase del codice troppo lunga')
-        A.data(v+b'\0'*(64-len(v)))
+    A.label('CTX')                                  # contesto di scrivi_riga
+    A.word(0); A.word(320); A.word(240); A.word(0); A.word(0x7fff); A.word(0)
+    A.label('CTAB')                                 # frasi del codice: offset, poi le righe
+    pos=4*len(voci_colore)
+    for v in voci_colore: A.word(pos); pos+=len(v)
+    for v in voci_colore: A.data(v)
+    A.data(b'\0'*((-pos)%4))
+    A.label('FONT'); A.data(font); A.data(b'\0'*((-len(font))%4))
     # tabella: offset (dalla TABLE) di ogni voce; indice 0 non usato
     A.label('TABLE')
     n=len(voci); offs=[]; pos=4*(n+1)

@@ -13,6 +13,7 @@ import argparse, hashlib, json, os, sys
 
 QUI = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, QUI)
+sys.path.insert(0, os.path.join(QUI, 'nighttrap'))   # moduli comuni (armasm, font) importati anche senza pacchetto
 from nighttrap import opera, stream, bps
 from nighttrap.immagine import Immagine, file_da_cue
 from nighttrap.dischi import DISCHI, FPS
@@ -37,6 +38,7 @@ def prepara_disco(n, iso, lingua, cartella_lingua, test_cambio):
     sub = carica_json(os.path.join(cartella_lingua, 'disco%d.json' % n))
     indice = {c['clip']: c for c in carica_json(os.path.join(QUI, 'dati', 'disco%d_clip.json' % n))['clip']}
     T = Testi(lingua)
+    mancanti = set()
 
     # testi e tempi
     voci, tempi = [], []          # tempi: (clip, inizio, fine, id)
@@ -46,6 +48,7 @@ def prepara_disco(n, iso, lingua, cartella_lingua, test_cambio):
         for b in c['battute']:
             if not b['testo'].strip():
                 continue
+            mancanti.update(T.mancanti(b['testo']))
             for s, e, righe in pagine(b['testo'], b['inizio'], b['fine'], T):
                 voci.append(T.voce(righe))
                 tempi.append((c['clip'], s, e, len(voci)))
@@ -75,7 +78,7 @@ def prepara_disco(n, iso, lingua, cartella_lingua, test_cambio):
         if hashlib.sha1(orig).hexdigest() != C['launchme_sha1']:
             errore('%s: il Launchme non e\' quello atteso (versione diversa del gioco o ISO gia\' modificata?)' % iso)
 
-        nuovo, _ = costruisci(orig, C, voci, voci_colore, test_cambio)
+        nuovo, _ = costruisci(orig, C, voci, voci_colore, T.tabella_font(), T.altezza, test_cambio)
 
         # dove mettere il nuovo Launchme: subito dopo la directory radice, nello spazio libero
         blocco_nuovo = max(et['radice']) + 1
@@ -126,8 +129,8 @@ def prepara_disco(n, iso, lingua, cartella_lingua, test_cambio):
         formato = (f.estensione, f.modo_cue)
     info = dict(battute=sum(len(c['battute']) for c in sub['clip']), pagine=len(voci), fotogrammi=n_fot,
                 launchme=len(nuovo), blocco=blocco_nuovo, formato=formato)
-    if T.non_convertiti:
-        print('  attenzione: caratteri senza equivalente nel font, mostrati come "?": %s' % ' '.join(sorted(T.non_convertiti)))
+    if mancanti:
+        print('  attenzione: caratteri che il font non ha (mostrati senza accento o come "?"): %s' % ' '.join(sorted(mancanti)))
     return modifiche, info
 
 
