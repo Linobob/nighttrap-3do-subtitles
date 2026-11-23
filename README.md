@@ -25,8 +25,8 @@ Servono le ISO **TOSEC** a 2048 byte per settore:
 | 1 | `Night Trap (1993)(Digital Pictures)(US)(Disc 1 of 2)[!].iso` | `bf501e71` |
 | 2 | `Night Trap (1993)(Digital Pictures)(US)(Disc 2 of 2)[!].iso` | `525d9730` |
 
-Le immagini in formato BIN/CUE a 2352 byte (es. Redump) non vanno bene per le patch BPS:
-usa lo strumento qui sotto partendo da una ISO a 2048 byte.
+Se hai le immagini **BIN/CUE** a 2352 byte (es. Redump), le patch BPS non vanno bene:
+usa lo strumento qui sotto, che accetta anche quel formato e crea direttamente una BIN/CUE sottotitolata.
 
 Per il MiSTer: crea per ogni disco un file `.cue` accanto alla ISO patchata
 (lo strumento qui sotto lo crea da solo):
@@ -41,13 +41,17 @@ Al cambio disco il gioco salva lo stato nella NVRAM: sul MiSTer carica il disco 
 
 ## Creare le ISO con lo strumento
 
-Serve solo **Python 3**, nessun pacchetto aggiuntivo.
+Serve solo **Python 3**, nessun pacchetto aggiuntivo. Funziona con le ISO a 2048 byte e con le
+immagini BIN/CUE a 2352 byte (MODE1): si può indicare la `.iso`, la `.bin` o il `.cue`.
+Il risultato è nello stesso formato dell'originale (per le BIN vengono ricalcolati i codici
+di correzione EDC/ECC dei settori modificati).
 
 ```
 python3 crea_patch.py --iso1 "Night Trap (...)(Disc 1 of 2)[!].iso" --iso2 "Night Trap (...)(Disc 2 of 2)[!].iso" --bps
 ```
 
-Nella cartella `uscita/` trovi per ogni disco la ISO sottotitolata, il `.cue` e (con `--bps`) la patch BPS.
+Nella cartella `uscita/` trovi per ogni disco l'immagine sottotitolata, il `.cue` e (con `--bps`) la patch BPS
+(valida per quella specifica immagine di partenza).
 Le ISO originali non vengono modificate. Si può fare anche un disco solo.
 
 | Opzione | Cosa fa |
@@ -77,7 +81,8 @@ da sole (massimo 29 caratteri, 2 righe per schermata); le battute lunghe vengono
 ```
 crea_patch.py        lo strumento
 nighttrap/
-  opera.py           filesystem del 3DO (Opera) letto direttamente dalla ISO
+  opera.py           filesystem del 3DO (Opera) letto direttamente dall'immagine
+  immagine.py        lettura ISO (2048) e BIN (2352), EDC/ECC dei settori
   stream.py          fotogrammi dello stream video Digital Pictures
   launchme.py        nuovo eseguibile del gioco con il codice dei sottotitoli
   armasm.py          piccolo assemblatore ARM (big-endian, ARM60)
@@ -117,19 +122,21 @@ plus the tool that builds them (other languages welcome).
 Download the two patches from **Releases** and apply them to the original ISOs with
 [Floating IPS](https://www.romhacking.net/utilities/1040/) or any BPS-capable patcher.
 You need the **TOSEC** 2048-byte-per-sector ISOs (CRC32 in the table above).
-2352-byte BIN/CUE images (e.g. Redump) won't match the BPS patches.
+2352-byte BIN/CUE images (e.g. Redump) won't match the BPS patches: use the tool instead,
+which accepts BIN/CUE too and outputs a subtitled BIN/CUE.
 
 On MiSTer, put a `.cue` next to each patched ISO (see the example above; the tool writes it for you).
 
 ## Building the ISOs with the tool
 
-Python 3 only, no extra packages:
+Python 3 only, no extra packages. Accepts 2048-byte ISOs and 2352-byte MODE1 BIN/CUE
+(pass the `.iso`, `.bin` or `.cue`); output is in the same format (EDC/ECC recomputed for BIN):
 
 ```
 python3 crea_patch.py --iso1 "Night Trap (...)(Disc 1 of 2)[!].iso" --iso2 "Night Trap (...)(Disc 2 of 2)[!].iso" --bps
 ```
 
-Output goes to `uscita/` (ISO, CUE and, with `--bps`, BPS for each disc). The original ISOs are never modified.
+Output goes to `uscita/` (image, CUE and, with `--bps`, BPS for each disc). The original ISOs are never modified.
 Options: `--lingua xx` (language folder in `lingue/`), `--uscita folder`, `--bps`,
 `--test-cambio-disco` (test disc 1 that asks for disc 2 as soon as the game starts).
 

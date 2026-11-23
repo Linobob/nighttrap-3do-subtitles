@@ -34,8 +34,7 @@ def leggi_etichetta(f):
     f.seek(0)
     b = f.read(132)
     if len(b) < 132 or b[0] != 1 or b[1:6] != b'ZZZZZ':
-        raise ErroreISO("non sembra una ISO 3DO (etichetta Opera mancante). "
-                        "Serve l'immagine a 2048 byte per settore, non un .bin a 2352.")
+        raise ErroreISO("non sembra un disco 3DO (etichetta Opera mancante)")
     dim_blocco, n_blocchi = struct.unpack('>II', b[76:84])
     radice_blocchi, radice_dim = struct.unpack('>II', b[88:96])
     ultimo = struct.unpack('>I', b[96:100])[0]

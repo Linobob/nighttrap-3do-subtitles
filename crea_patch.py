@@ -14,6 +14,7 @@ import argparse, hashlib, json, os, sys
 QUI = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, QUI)
 from nighttrap import opera, stream, bps
+from nighttrap.immagine import Immagine, file_da_cue
 from nighttrap.dischi import DISCHI, FPS
 from nighttrap.testo import Testi, pagine
 from nighttrap.launchme import costruisci
@@ -52,7 +53,11 @@ def prepara_disco(n, iso, lingua, cartella_lingua, test_cambio):
     if len(voci_colore) != 6:
         errore('servono 6 colori in lingua.json')
 
-    with open(iso, 'rb') as f:
+    try:
+        f = Immagine(iso)
+    except ValueError as e:
+        errore('%s: %s' % (iso, e))
+    with f:
         try:
             et, voci_radice = opera.radice(f)
         except opera.ErroreISO as e:
@@ -62,6 +67,11 @@ def prepara_disco(n, iso, lingua, cartella_lingua, test_cambio):
             errore('%s non sembra il disco %d di Night Trap' % (iso, n))
         lm, dati = per_nome['Launchme'], per_nome[C['file_dati']]
         orig = opera.leggi_file(f, lm)
+        if f.grezzo:
+            # immagine BIN a 2352: controlla che EDC/ECC ricalcolati coincidano con quelli del disco
+            campione = [0] + et['radice'] + list(range(lm.blocco, lm.blocco + 8))
+            if not f.controlla_ecc(campione):
+                errore('%s: i codici di correzione dei settori non tornano (immagine BIN non standard?)' % iso)
         if hashlib.sha1(orig).hexdigest() != C['launchme_sha1']:
             errore('%s: il Launchme non e\' quello atteso (versione diversa del gioco o ISO gia\' modificata?)' % iso)
 
@@ -112,8 +122,10 @@ def prepara_disco(n, iso, lingua, cartella_lingua, test_cambio):
                     errore('%s: fotogramma inatteso nella clip %s' % (iso, clip))
                 modifiche.append((inizio_dati + v + 4, stream.marcatore(sid)))
                 n_fot += 1
+        modifiche = f.modifiche_fisiche(modifiche)
+        formato = (f.estensione, f.modo_cue)
     info = dict(battute=sum(len(c['battute']) for c in sub['clip']), pagine=len(voci), fotogrammi=n_fot,
-                launchme=len(nuovo), blocco=blocco_nuovo)
+                launchme=len(nuovo), blocco=blocco_nuovo, formato=formato)
     if T.non_convertiti:
         print('  attenzione: caratteri senza equivalente nel font, mostrati come "?": %s' % ' '.join(sorted(T.non_convertiti)))
     return modifiche, info
@@ -121,8 +133,8 @@ def prepara_disco(n, iso, lingua, cartella_lingua, test_cambio):
 
 def main():
     ap = argparse.ArgumentParser(description='Night Trap 3DO: crea le ISO sottotitolate e le patch BPS.')
-    ap.add_argument('--iso1', help='ISO originale del disco 1 (2048 byte per settore)')
-    ap.add_argument('--iso2', help='ISO originale del disco 2')
+    ap.add_argument('--iso1', help='immagine originale del disco 1: ISO (2048) oppure BIN/CUE (2352)')
+    ap.add_argument('--iso2', help='immagine originale del disco 2')
     ap.add_argument('--lingua', default='it', help='cartella dentro lingue/ (predefinita: it)')
     ap.add_argument('--uscita', default='uscita', help='cartella dove scrivere i risultati')
     ap.add_argument('--bps', action='store_true', help='crea anche le patch BPS')
@@ -141,19 +153,26 @@ def main():
             continue
         if not os.path.exists(iso):
             errore('non trovo %s' % iso)
+        try:
+            iso = file_da_cue(iso)
+        except ValueError as e:
+            errore('%s: %s' % (iso, e))
+        if not os.path.exists(iso):
+            errore('non trovo %s (indicato nel .cue)' % iso)
         prova = a.test_cambio_disco and n == 1
         print('Disco %d: %s' % (n, os.path.basename(iso)))
         modifiche, info = prepara_disco(n, iso, lingua, cart_lingua, prova)
         print('  %(battute)d battute, %(pagine)d schermate di testo, %(fotogrammi)d fotogrammi marcati' % info)
         nome = 'Night Trap (3DO) - %s %s (%s)' % ('PROVA cambio disco' if prova else 'sottotitoli', sigla, DISCHI[n]['nome_iso'])
-        dest = os.path.join(a.uscita, nome + '.iso')
+        est, modo = info['formato']
+        dest = os.path.join(a.uscita, nome + est)
         fbps = os.path.join(a.uscita, nome + '.bps') if a.bps else None
         os.makedirs(a.uscita, exist_ok=True)
-        print('  scrivo la ISO (qualche secondo)...')
+        print('  scrivo %s (qualche secondo)...' % ('la ISO' if est == '.iso' else 'la BIN'))
         crc_s, crc_t, _ = bps.crea(iso, dest, modifiche, fbps)
         with open(os.path.join(a.uscita, nome + '.cue'), 'w') as c:
-            c.write('FILE "%s.iso" BINARY\n  TRACK 01 MODE1/2048\n    INDEX 01 00:00:00\n' % nome)
-        print('  fatto: %s.iso + .cue%s' % (nome, ' + .bps' if fbps else ''))
+            c.write('FILE "%s%s" BINARY\n  TRACK 01 %s\n    INDEX 01 00:00:00\n' % (nome, est, modo))
+        print('  fatto: %s%s + .cue%s' % (nome, est, ' + .bps' if fbps else ''))
         print('  CRC32 originale %08x, nuova %08x' % (crc_s, crc_t))
 
 

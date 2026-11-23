@@ -119,13 +119,21 @@ equivalenti, quindi i sottotitoli continuano.
 L'opzione `--test-cambio-disco` aggiunge un hook all'avvio della partita (0x19e18) che imposta uno stato
 valido e salta subito al cambio disco: serve per provare il disco 2 senza giocare tutto il disco 1.
 
-## 8. Le patch BPS
+## 8. Immagini BIN (2352 byte per settore)
+
+Le copie in formato BIN/CUE (es. Redump) hanno settori da 2352 byte: 16 di intestazione (sincronismo,
+indirizzo, modo 1), 2048 di dati, poi EDC (CRC a 32 bit) e ECC (codici Reed-Solomon P e Q).
+`immagine.py` legge i dati saltando l'intestazione, così il resto del codice vede sempre una ISO a 2048.
+Quando un settore viene modificato, EDC ed ECC vengono ricalcolati. Prima di scrivere, lo strumento
+ricalcola EDC/ECC di alcuni settori originali e controlla che coincidano con quelli dell'immagine.
+
+## 9. Le patch BPS
 
 Le modifiche sono poche e note in anticipo (nuovo Launchme, voci di directory, marcatori), quindi
 `bps.py` scrive la ISO nuova e la patch BPS in un solo passaggio: "copia dalla sorgente" per le parti uguali,
 "byte nuovi" per quelle cambiate. Circa 300 KB per disco.
 
-## 9. Come sono stati fatti i sottotitoli
+## 10. Come sono stati fatti i sottotitoli
 
 Non fanno parte di questo repository, ma per chi vuole rifarli:
 
