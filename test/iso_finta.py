@@ -21,7 +21,7 @@ def crea(layout, etichetta, launchme, dati, nome_dati, uscita, blocchi_tot):
         radice = L['disc_label']['root_directory_avatar_list']
         # riempitivo dopo la directory fino al blocco 330000 (come nella ISO vera)
         f.seek((max(radice) + 1) * B)
-        n = (330000 - max(radice) - 1) * B
+        n = (min(330000, blocchi_tot) - max(radice) - 1) * B
         pez = b'iamaduck' * (1 << 17)
         while n > 0:
             k = min(n, len(pez)); f.write(pez[:k]); n -= k
