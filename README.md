@@ -104,6 +104,14 @@ test/                strumenti per i test
 
 Come funziona: vedi [docs/tecnico.md](docs/tecnico.md).
 
+## Strumenti comuni
+
+I moduli generici di questo progetto (filesystem del 3DO, immagini ISO/BIN, assembler ARM,
+routine del testo con font proprio, font bitmap, patch BPS) vengono dal repository
+**[retro-tools](https://github.com/Linobob/retro-tools)**, dove ci sono anche gli strumenti usati per
+preparare i sottotitoli (estrazione dell'audio, Whisper, riallineamento dei tempi) e un piccolo emulatore
+ARM per le prove. Qui ce n'è una copia, così il progetto funziona da solo.
+
 ## Note
 
 Il repository non contiene nessun file del gioco: lo strumento lavora sulle ISO originali, che devi avere tu.
@@ -161,6 +169,11 @@ Latin-1 and Latin-2 accented letters and a black outline. Missing letters fall b
 or `?` (the tool lists them). Lines wrap automatically (260 pixels, 2 lines per screen).
 
 Technical notes (in Italian): [docs/tecnico.md](docs/tecnico.md).
+
+The generic modules (3DO filesystem, ISO/BIN images, ARM assembler, custom-font text routine, bitmap font,
+BPS patches) come from **[retro-tools](https://github.com/Linobob/retro-tools)**, which also has the tools used
+to prepare the subtitles (audio extraction, Whisper, timing alignment) and a small ARM emulator for testing.
+This repository keeps a copy of them so it works on its own.
 
 This repository contains no game data: the tool works on your own original ISOs.
 Night Trap is a trademark of its respective owners; this is a non-commercial fan project.
